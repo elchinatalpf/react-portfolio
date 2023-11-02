@@ -2,9 +2,10 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-// import { Outlet } from 'react-router-dom';
-import { createBrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+// import { createBrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import NavTabs from './components/Navigation';
 // import Header from './components/Header';
 // import AboutMe from './components/AboutMe';
 // import Portfolio from './components/Portfolio';
@@ -17,18 +18,13 @@ function App() {
   
 
   return (
-    <Router>
-      <div>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={AboutMe} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/resume" component={Resume} />
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
+    <>
+      <NavTabs />
+      <main className="mx-3">
+        <Outlet />
+      </main>
+    </>
+    
   );
 }
 
