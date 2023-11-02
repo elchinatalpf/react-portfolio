@@ -11,7 +11,7 @@ import NavTabs from './components/Navigation';
 // import Portfolio from './components/Portfolio';
 // import Contact from './components/Contact';
 // import Resume from './components/Resume';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
       <main className="mx-3">
         <Outlet />
       </main>
+    <Footer />
     </>
     
   );
