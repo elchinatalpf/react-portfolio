@@ -1,12 +1,10 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 import { Outlet } from 'react-router-dom';
-// import { createBrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import NavTabs from './components/Navigation';
-// import Header from './components/Header';
+// NavBar will be call in header and then here Import Header
+
+// import NavTabs from './components/Navigation';
+import Header from './components/Header';
 // import AboutMe from './components/AboutMe';
 // import Portfolio from './components/Portfolio';
 // import Contact from './components/Contact';
@@ -19,7 +17,7 @@ function App() {
 
   return (
     <>
-      <NavTabs />
+      <Header />
       <main className="mx-3">
         <Outlet />
       </main>

@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer>
       <div>
-        <h5>Connect with Me.</h5>
+        <h5>Connect with Me!</h5>
         <a href="https://github.com/elchinatalpf" target="_blank"
         rel="noopener noreferrer" className="text-white me-3">
           <i className="fab fa-github"></i> GitHub
