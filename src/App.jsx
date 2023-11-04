@@ -4,11 +4,11 @@ import { Outlet } from 'react-router-dom';
 // NavBar will be call in header and then here Import Header
 
 // import NavTabs from './components/Navigation';
-import Header from './components/Header';
-// import AboutMe from './components/AboutMe';
+// import AboutMe from './pages/AboutMe';
 // import Portfolio from './components/Portfolio';
 // import Contact from './components/Contact';
-// import Resume from './components/Resume';
+// import Resume from './pages/Resume';
+import Header from './components/Header';
 import Footer from './components/Footer';
 
 

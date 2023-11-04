@@ -3,8 +3,9 @@ import NavTabs from "./Navigation";
 
 export default function Header() {
   return (
-    <header className="bg-light border-bottom">
-      <div className="container-fluid d-flex justify-content-between align-items-center">
+    <header className="header-block">
+      <div className="header-container">
+        <h1 className="header-title">Javier React JS Portfolio</h1>
         <NavTabs />
       </div>
     </header>
