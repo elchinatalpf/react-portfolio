@@ -1,7 +1,7 @@
 export default function AboutMe() {
   return (
     <div>
-      <h4>Javier Morales</h4>
+      <h4>Javier Morales: About Me</h4>
       {/* <img /> */}
       <p>
       I am currently immersed in the dynamic world of technology as a
