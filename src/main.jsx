@@ -10,7 +10,6 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 
-
 const router = createBrowserRouter([
   {
     path: '/',

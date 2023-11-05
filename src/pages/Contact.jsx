@@ -27,32 +27,41 @@ const sendEmail = async (event) => {
 export default function Contact() {
 
   return (
-
     <div>
       <h1>Contact Me</h1>
 
-      <form className="contact-form" onSubmit={sendEmail}>
-        <div className="mb-3">
-          <label htmlFor="user-name">Name</label>
-          <input type="text" className="user-name" name="from_name" required/>
-        </div>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
 
-        <div>
-          <label htmlFor="user-email" className="user-email" name="user-email">Email</label>
-          <input type="text" className="user-email" name="user_email" required />
-        </div>
+            <form className="contact-form" onSubmit={sendEmail}>
+              <div className="mb-3">
+                <label htmlFor="user-name">Name</label>
+                <input type="text" className="user-name form-control" name="from_name" required />
+              </div>
 
-        <div className="contact-form">
-          <label htmlFor="message" className="user-message" >Message</label>
-          <textarea className="message" name="message" required></textarea>
-        </div>
+              <div>
+                <label htmlFor="user-email" className="user-email" name="user-email">
+                  Email
+                </label>
+                <input type="text" className="user-email form-control" name="user_email" required />
+              </div>
 
-        <div>
-          <input type="submit" value="send"  className="btn btn-primary" />          
-        </div>
+              <div className="contact-form">
+                <label htmlFor="message" className="user-message">
+                  Message
+                </label>
+                <textarea className="message form-control" name="message" required></textarea>
+              </div>
 
-      </form>
+              <div>
+                <input type="submit" value="send" className="btn btn-primary" />
+              </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
     </div>
-
   );
 }
