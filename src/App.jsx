@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 // import NavTabs from './components/Navigation';
 // import AboutMe from './pages/AboutMe';
 // import Portfolio from './components/Portfolio';
-// import Contact from './components/Contact';
+
 // import Resume from './pages/Resume';
 import Header from './components/Header';
 import Footer from './components/Footer';
