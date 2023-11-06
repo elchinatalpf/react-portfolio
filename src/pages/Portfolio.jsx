@@ -9,8 +9,8 @@ import socialNetwork from '../assets/social-network-nosql.png';
 export default function Portfolio() {
   return (
     <div className='container'>
-      <div className='row'>
-        <div className='col-md-6 col-lg-4'>
+      <div className='row justify-content-center mb-3'>
+        <div className='col-12 col-md-6 col-lg-4'>
         <Project
           title="Tech Blog Model View Controller"
           imageSrc={techBlogImage}
@@ -22,7 +22,7 @@ export default function Portfolio() {
         </Project>
         </div>
 
-        <div className='col-md-6 col-lg-4'>
+        <div className='col-12  col-md-6 col-lg-4'>
         <Project
           title="Note Taker Express JS"
           imageSrc={noteTakerImage}
@@ -34,7 +34,7 @@ export default function Portfolio() {
         </Project>
           </div>
 
-          <div className='col-sm-12 col-md-6'>
+          <div className='col-12 col-sm-12 col-md-6'>
         <Project
           title="Text Editor PWA Write"
           imageSrc={textEditorPwa}
@@ -46,7 +46,7 @@ export default function Portfolio() {
         </Project>
           </div>
 
-          <div className='col-md-6 col-lg-4'>
+          <div className='col-12 col-md-6 col-lg-4'>
         <Project
           title="Server Side API's Weather Dashboard"
           imageSrc={weatherDashboard}
@@ -58,7 +58,7 @@ export default function Portfolio() {
         </Project>
           </div>
 
-          <div className='col-md-6 col-lg-4'>
+          <div className='col-12 col-md-6 col-lg-4'>
         <Project
           title="Password Generator"
           imageSrc={passwordGenerator}
@@ -70,7 +70,7 @@ export default function Portfolio() {
         </Project>
           </div>
           
-          <div className='col-md-6 col-lg-4'>
+          <div className='col-12 col-md-6 col-lg-4'>
         <Project
           title="Social Network API NoSQL"
           imageSrc={socialNetwork}

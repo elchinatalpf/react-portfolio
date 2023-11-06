@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 10px;
+  box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
@@ -75,3 +76,8 @@ main {
   margin: 0 auto;
   padding-top: 20px;
 }
+
+.Project {
+  margin-bottom: 30px;
+}
+

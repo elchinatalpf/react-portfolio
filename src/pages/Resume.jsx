@@ -7,7 +7,7 @@ export default function Resume() {
         <div className="col-12">
           <h1>Javier Morales</h1>
             <h2>Working as a BA/QA Project Support Internship with the National Association
-              of Insurances Comissioners
+              of Insurances Comissioners (NAIC).
             </h2>
           <p className="lead">Currently studying as:</p>
           <ul className="list-group">
