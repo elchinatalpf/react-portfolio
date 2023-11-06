@@ -8,7 +8,7 @@ export default function Project({ title, imageSrc, imageAtl, projectLink, repoLi
             {children}
             {projectLink}
             <a href={projectLink} target="_blank" rel="noopener noreferrer"><br />Live Project</a>
-            <a href={repoLink} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            <a href={repoLink} target="_blank" rel="noopener noreferrer">GitHub</a>
           </p>
         </div>
     </section>

@@ -73,11 +73,6 @@ const sendEmail = async (event) => {
     }
     
   };
-  
-  //     import.meta.env.VITE_REACT_APP_SERVICE_ID,
-  //     import.meta.env.VITE_REACT_APP_FORM_ID,
-  //     import.meta.env.VITE_REACT_APP_USER_ID,
-
 
   return (
     <div>
