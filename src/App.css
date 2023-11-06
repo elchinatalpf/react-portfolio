@@ -68,3 +68,10 @@ main {
 .card-text {
   margin: 0;
 }
+
+.photo-javier {
+  height: auto;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+}

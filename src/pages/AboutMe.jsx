@@ -1,8 +1,11 @@
+import React from 'react';
+import photo from '../assets/portfolio-photo.jpg'
+
 export default function AboutMe() {
   return (
     <div>
       <h4>Javier Morales: About Me</h4>
-      {/* <img /> */}
+      <img className='photo-javier' src={photo} alt="Javier Morales" />
       <p>
       I am currently immersed in the dynamic world of technology as a
       BA/QA Project Support Intern at NAIC, while also honing my skills
