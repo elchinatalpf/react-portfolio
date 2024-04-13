@@ -7,7 +7,7 @@ export default function AboutMe() {
     <div className='aboutMe-container'>
       <h4>About Me</h4>
       <img className='photo-javier' src={photo} alt="Javier Morales" />
-      <p>
+      <p className='aboutMe-text'>
       I am currently immersed in the dynamic world of technology as a
       BA/QA Project Support Intern at NAIC, while also honing my skills
       through a rigorous Fullstack Coding Bootcamp. This exciting phase
