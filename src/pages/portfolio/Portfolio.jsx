@@ -1,10 +1,10 @@
-import Project from '../components/Project';
-import techBlogImage from '../assets/tech-blog-screenshot.png';
-import noteTakerImage from '../assets/note-taker-express-screenshot.png';
-import textEditorPwa from '../assets/text-editor-pwa.png';
-import weatherDashboard from '../assets/server-side-api-weather-dashboard.png';
-import passwordGenerator from '../assets/password-generator-javier.png';
-import socialNetwork from '../assets/social-network-nosql.png';
+import Project from '../../components/Project';
+import techBlogImage from '../../assets/tech-blog-screenshot.png';
+import noteTakerImage from '../../assets/note-taker-express-screenshot.png';
+import textEditorPwa from '../../assets/text-editor-pwa.png';
+import weatherDashboard from '../../assets/server-side-api-weather-dashboard.png';
+import passwordGenerator from '../../assets/password-generator-javier.png';
+import socialNetwork from '../../assets/social-network-nosql.png';
 
 export default function Portfolio() {
   return (
