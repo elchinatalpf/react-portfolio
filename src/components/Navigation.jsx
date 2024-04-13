@@ -3,10 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 export default function NavTabs () {
   const currentPage = useLocation().pathname;
 
-
   return (
     <nav>
-      <ul className="nav nav-tabs">
+      <ul className="nav-list">
         <li className="nav-item">
           <Link
           to="/"
