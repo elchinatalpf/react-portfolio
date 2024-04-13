@@ -1,5 +1,6 @@
 import React from "react";
-import NavTabs from "./Navigation";
+import NavTabs from "../Navigation";
+import './header.css';
 
 export default function Header() {
   return (
