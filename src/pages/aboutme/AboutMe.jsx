@@ -1,9 +1,10 @@
 import React from 'react';
 import photo from '../../assets/portfolio-photo.jpg'
+import './AboutMe.css';
 
 export default function AboutMe() {
   return (
-    <div>
+    <div className='aboutMe-container'>
       <h4>About Me</h4>
       <img className='photo-javier' src={photo} alt="Javier Morales" />
       <p>
