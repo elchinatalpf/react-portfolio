@@ -1,0 +1,19 @@
+.footer {
+    background-color: rgb(10, 73, 93);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    /* position:static; */
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-link {
+    color: #c2bf92;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

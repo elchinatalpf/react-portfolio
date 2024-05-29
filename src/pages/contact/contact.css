@@ -26,6 +26,8 @@
 .contact-form .form-textarea {
     border-radius: 4px;
     border: 1px solid #ccc;
+    width: 100%;
+    padding: 0.5rem;
 }
 
 .contact-form .form-input:focus,
@@ -34,10 +36,22 @@
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
+.error-text {
+    color: red;
+    font-size: 0.87rem;
+    margin-top: 0.5rem;
+}
+
 .submit-btn {
     background-color: #007bff;
     border-color: #007bff;
     color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
   }
   
   .submit-btn:hover {

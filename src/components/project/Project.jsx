@@ -1,3 +1,5 @@
+import './project.css';
+
 export default function Project({ title, imageSrc, imageAtl, projectLink, repoLink, children }) {
   return (
     <section className="card">
