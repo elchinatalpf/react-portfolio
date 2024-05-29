@@ -5,6 +5,14 @@
     background-color: rgb(2, 39, 77);
     color: white;
     padding: 0.5rem 1rem;
+    box-shadow: 0 2px 5px rgba(3, 234, 238, 0.2);
+}
+
+.header-container {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-title {
@@ -34,4 +42,5 @@
   .nav-link:hover,
   .nav-link.active {
     background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: underline;
   }
