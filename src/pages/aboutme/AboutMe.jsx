@@ -1,6 +1,6 @@
 import React from "react";
 import photo from "../../assets/portfolio-photo.jpg";
-import "./AboutMe.css";
+import "./aboutMe.css";
 
 export default function AboutMe() {
   return (

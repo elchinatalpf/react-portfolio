@@ -1,0 +1,12 @@
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+/* .card selector is from the project component. */
+.portfolio .card {
+    flex: 1 1 calc(33% - 2rem);
+    max-width: calc(33% - 2rem);
+  }
