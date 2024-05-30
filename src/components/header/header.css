@@ -11,6 +11,7 @@
 .header-container {
     width: 100%;
     margin: 0 auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -28,7 +29,7 @@
 }
 
 .nav-item {
-    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .nav-link {

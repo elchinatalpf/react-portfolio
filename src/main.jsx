@@ -9,7 +9,6 @@ import Portfolio from './pages/portfolio/Portfolio';
 import Contact from './pages/contact/Contact';
 import Resume from './pages/resume/Resume';
 
-
 const router = createBrowserRouter([
   {
     path: '/',
