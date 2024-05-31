@@ -5,8 +5,30 @@
     gap: 2rem;
     padding: 2rem;
 }
+
 /* .card selector is from the project component. */
 .portfolio .card {
     flex: 1 1 calc(33% - 2rem);
     max-width: calc(33% - 2rem);
-  }
+}
+
+@media (max-width: 576px) {
+    .portfolio .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .portfolio .card {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+}
+
+@media (min-width: 769px) {
+    .portfolio .card {
+        flex: 1 1 calc(33% - 2rem);
+        max-width: calc(33% - 2rem);
+    }
+}
