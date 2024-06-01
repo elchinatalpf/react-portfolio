@@ -7,10 +7,12 @@
     text-align: center;
     margin-bottom: 16px;
     transition: transform 0.3s ease;
+    padding: 1rem;
 }
 
 .card:hover {
-    transform: scale(1.05s);
+    transform: scale(1.5s);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .projects-images {

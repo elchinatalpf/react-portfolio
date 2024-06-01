@@ -1,15 +1,13 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-color: rgb(2, 48, 47);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -39,25 +37,6 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -68,5 +47,114 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-link {
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  .photo-javier {
+    width: 80%;
+  }
+  .card {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+  .contact-container {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  button {
+    padding: 0.4rem 1em;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  button {
+    padding: 0.5 1.1em;
+  }
+  .header-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+    width: auto;
+  }
+
+  .photo-javier {
+    width: 50%;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 1rem 0.5rem;
+  }
+
+  .portfolio .card {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+
+  .contact-container {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  :root {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 3.2em;
+  }
+  button {
+    padding: 0.6em 1.2em;
+  }
+  .header-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+    width: auto;
+  }
+
+  .photo-javier {
+    width: 30%;
+  }
+
+  .card {
+    max-width: 400px;
+    margin: 1rem;
+  }
+
+  .portfolio .card {
+    flex: 1 1 calc(33% - 2rem);
+    max-width: calc(33% - 2rem);
+  }
+
+  .contact-container {
+    padding: 2rem;
   }
 }
