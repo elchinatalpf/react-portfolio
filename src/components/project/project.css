@@ -3,16 +3,17 @@
     border-radius: 8px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 300px;
+    width: 100px;
     text-align: center;
     margin-bottom: 16px;
     transition: transform 0.3s ease;
     padding: 1rem;
+    
 }
 
 .card:hover {
-    transform: scale(1.5s);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.2);
 }
 
 .projects-images {
@@ -21,11 +22,10 @@
 }
 
 .card-content {
-    padding: 1rem;
+    padding: 0.1rem;
 }
 
 .card-content .card-text {
-    margin: 0.5rem 0;
 }
 
 .card-content a {
