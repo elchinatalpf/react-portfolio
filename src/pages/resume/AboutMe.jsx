@@ -1,7 +1,7 @@
 import React from "react";
-import "./resume.css";
+import "./aboutMe.css";
 
-export default function Resume() {
+export default function AboutMe() {
   return (
     <div className="container mt-5">
       <div className="row">
