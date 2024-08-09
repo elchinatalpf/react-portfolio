@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaGitAlt, FaGithub } from "react-icons/fa";
 import "./aboutMe.css";
 
 export default function AboutMe() {
@@ -9,96 +10,67 @@ export default function AboutMe() {
     setshowFullResume(!showFullResume);
   };
 
+  const technogolies = [
+    { name: "Git", icon: <FaGitAlt /> },
+    { name: "GitHub", icon: <FaGithub /> }
+    // { name: "MongoDB", icon:  },
+    // { name: "Express JS", icon:  },
+    // { name: "React JS", icon:  },
+    // { name: "Node JS", icon:  },
+    // { name: "MySQL", icon:  },
+    // { name: "Tableau", icon:  },
+    // { name: "Snowflake", icon:  },
+    // { name: "PostgreSQL", icon:  },
+  ];
+
   return (
-    <div>
+    <div className="container mt-5">
       <h1>About Me</h1>
       <p>
-        Description about myself
+        I am Javier Morales, a software developer with a passion of learn and improvement as my core skill.
+        <br />
+        Former classical ballet dancer from Cuba
       </p>
+      <h3>Technologies I Work With</h3>
+
+      <div>
+        <FaGitAlt style={{ fontSize: '5rem', color: '#f06529' }}/>
+        <FaGithub style={{ fontSize: '5rem', color: '#f06529' }}/>
+      </div>
+
+      <div className="tech-icons">
+        <ul>
+          {technogolies.map((tech, index) => (
+            <li key={index} className="tech-item">
+              {React.cloneElement(tech.icon, { className: "tech-icon" })}
+              <span>{tech.name}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
       <button onClick={handleToggleResume}>
-        {showFullResume ? "Show Less" : "Show More"}</button>
+        {showFullResume ? "Show Less" : "Show More"}
+      </button>
 
       {showFullResume && (
         <div>
-          <h2>Full Resume</h2>
+          <h2>My Journey</h2>
           <p>
-            Description about myself
+            Before stepping into the tech world, I spent 20 years as a professional ballet dancer,
+            traveling the globe and performing in some of the greatest theaters in the world.
+            These experiences have shaped my approach to learning and working in Software Development.
+            <br />
+            I am passionate about learning and improving in every aspect of my life.
+            I embrace challenges like a professional, with the same dedication I had every day 
+            in the studios when I was learning a new ballet choreography. This mindset helps me 
+            not only to perform but also to discover new ways to improve my skills.
           </p>
           {/* Add more content as needed */}
+          <a href="./Javier_Morales_Resume_2024.pdf" download="Javier_Morales_Resume_2024.pdf" className="download-button">Download Resume (PDF)</a>
         </div>
       )}
-      <a href="./Javier_Morales_Resume_2024.pdf" download="Javier_Morales_Resume_2024.pdf" className="download-button">Download Resume (PDF)</a>
       
     </div>
   );
 }
-
-
-
-
-    // <div className="container mt-5">
-    //   <div className="row">
-    //     <div className="col-12">
-    //       <h1 className="text-center">Javier Morales</h1>
-
-    //       <h2 className="mt-4">Objective</h2>
-    //       <p>
-    //         Highly motivated software engineer eager to leverage extensive data analysis skills and technical proficiency in SQL,
-    //         Tableau, and Snowflake acquired at the National Association of Insurance Commissioners (NAIC) to contribute effectively
-    //         to software development projects. Committed to utilizing business management acumen and project support expertise to
-    //         drive innovation and achieve organizational objectives.
-    //       </p>
-
-    //       <h2 className="mt-4">Technical Skills</h2>
-    //       <ul className="list-group">
-    //         <li className="list-group-item"><strong>Programming:</strong> HTML, CSS, JavaScript, SQL, MERN Stack</li>
-    //         <li className="list-group-item"><strong>Tools:</strong> Excel, Tableau, Jira, Snowflake, PostgreSQL, VS Code, Git workflow</li>
-    //         <li className="list-group-item"><strong>Languages:</strong> Fluent in Spanish and English</li>
-    //       </ul>
-
-    //       <h2 className="mt-4">Work Experience</h2>
-    //       <div className="mb-3">
-    //         <h3>BA/QA Project Support Intern</h3>
-    //         <h4>National Association of Insurance Commissioners (NAIC)</h4>
-    //         <p>Sep 2023  Present</p>
-    //         <ul className="list-group">
-    //           <li className="list-group-item">Conduct data analysis using Excel, SQL, and Tableau for data-driven decision-making processes</li>
-    //           <li className="list-group-item">Translate official documents to Spanish to facilitate communication with Spanish-speaking stakeholders</li>
-    //           <li className="list-group-item">Manage invoices, audits, and metric report generation for consultant teams, ensuring accuracy and compliance</li>
-    //           <li className="list-group-item">Provide support to OPTins by conducting audits and quality assurance of PDF file ingestion</li>
-    //           <li className="list-group-item">Maintain contact lists for monthly industry and state meetings, facilitating seamless communication and collaboration</li>
-    //           <li className="list-group-item">Perform QA testing of SQL queries in Snowflake to ensure data integrity and system functionality</li>
-    //         </ul>
-    //       </div>
-
-    //       <h2 className="mt-4">Certifications</h2>
-    //       <ul className="list-group">
-    //         <li className="list-group-item">Tableau A-Z Hands-On Tableau Training for Data Science (Udemy)</li>
-    //         <li className="list-group-item">Generative AI for Leaders & Business Professionals (Udemy)</li>
-    //       </ul>
-
-    //       <h2 className="mt-4">Education</h2>
-    //       <ul className="list-group">
-    //         <li className="list-group-item">Full Stack Software Development Bootcamp, University of Kansas (2022 - 2023)</li>
-    //         <li className="list-group-item">Associate's Degree in Business Management, Eastern Gateway Community College (2019 - 2022)</li>
-    //         <li className="list-group-item">National School of Art, Classical Ballet (1999 - 2003)</li>
-    //       </ul>
-
-    //       <h2 className="mt-4">Previous Experience</h2>
-    //       <ul className="list-group">
-    //         <li className="list-group-item">Dancer/Professor, Kansas City Ballet (2017 - 2023)</li>
-    //         <li className="list-group-item">Dancer, Bay Area Houston Ballet & Theater (2015 - 2017)</li>
-    //         <li className="list-group-item">Instructor, Feijoo Ballet School (2016 - 2017)</li>
-    //         <li className="list-group-item">Dancer, Cultural Center of Mazatlán, Mexico (2014 - 2015)</li>
-    //         <li className="list-group-item">Dancer, National Ballet of Cuba (2003 - 2014)</li>
-    //       </ul>
-
-    //       <h2 className="mt-4">Transferable Skills from Ballet Career</h2>
-    //       <ul className="list-group">
-    //         <li className="list-group-item">Strong discipline and time management honed through years of rigorous training and performance schedules</li>
-    //         <li className="list-group-item">Excellent teamwork and ability to perform under pressure in high-stakes environments</li>
-    //         <li className="list-group-item">Teaching and coaching experience working with diverse groups of students, demonstrating effective communication and leadership abilities</li>
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </div>
