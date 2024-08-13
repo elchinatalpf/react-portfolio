@@ -9,8 +9,28 @@
   h2 {
     font-size: 2rem;
   }
+
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .tech-icon {
+    font-size: 5rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
   
-  h3 {
+  /* h3 {
     font-size: 1.75rem;
   }
   
@@ -31,7 +51,7 @@
   
   .text-center a:hover {
     text-decoration: underline;
-  }
+  } */
   
   @media (max-width: 576px) {
     h1 {

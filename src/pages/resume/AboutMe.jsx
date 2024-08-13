@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { FaGitAlt, FaGithub } from "react-icons/fa";
+import { FaGitAlt, FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
+import { SiMongodb, SiMysql, SiTableau, SiSnowflake, SiPostgresql } from "react-icons/si";
+
 import "./aboutMe.css";
 
 export default function AboutMe() {
@@ -11,16 +13,15 @@ export default function AboutMe() {
   };
 
   const technogolies = [
-    { name: "Git", icon: <FaGitAlt /> },
-    { name: "GitHub", icon: <FaGithub /> }
-    // { name: "MongoDB", icon:  },
-    // { name: "Express JS", icon:  },
-    // { name: "React JS", icon:  },
-    // { name: "Node JS", icon:  },
-    // { name: "MySQL", icon:  },
-    // { name: "Tableau", icon:  },
-    // { name: "Snowflake", icon:  },
-    // { name: "PostgreSQL", icon:  },
+    { name: "Git", icon: <FaGitAlt className="tech-icon"/> },
+    { name: "GitHub", icon: <FaGithub className="tech-icon"/> },
+    { name: "MongoDB", icon: <SiMongodb className="tech-icon"/> },
+    { name: "Node JS", icon: <FaNodeJs className="tech-icon"/> },
+    { name: "React JS", icon: <FaReact className="tech-icon"/> },
+    { name: "MySQL", icon: <SiMysql className="tech-icon"/> },
+    { name: "Tableau", icon: <SiTableau className="tech-icon"/> },
+    { name: "Snowflake", icon: <SiSnowflake className="tech-icon"/> },
+    { name: "PostgreSQL", icon: <SiPostgresql className="tech-icon" /> }
   ];
 
   return (
@@ -33,15 +34,23 @@ export default function AboutMe() {
       </p>
       <h3>Technologies I Work With</h3>
 
-      <div>
+      {/* <div>
         <FaGitAlt style={{ fontSize: '5rem', color: '#f06529' }}/>
         <FaGithub style={{ fontSize: '5rem', color: '#f06529' }}/>
-      </div>
+        <SiMongodb style={{ fontSize: '5rem', color: '#f06529' }}/>
+        <FaNodeJs style={{ fontSize: '5rem', color: '#f06529' }}/>
+        <FaReact style={{ fontSize: '5rem', color: '#f06529' }}/>
+        <SiMysql style={{ fontSize: '5rem', color: '#f06529' }}/>
+        <SiTableau style={{ fontSize: '5rem', color: '#f06529' }}/>
+        <SiSnowflake style={{ fontSize: '5rem', color: '#f06529' }}/>
+        <SiPostgresql style={{ fontSize: '5rem', color: '#f06529' }}/>
+      </div> */}
 
       <div className="tech-icons">
         <ul>
           {technogolies.map((tech, index) => (
             <li key={index} className="tech-item">
+              {/* {tech.icon} */}
               {React.cloneElement(tech.icon, { className: "tech-icon" })}
               <span>{tech.name}</span>
             </li>
