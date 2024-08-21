@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaGitAlt, FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiMongodb, SiMysql, SiTableau, SiSnowflake, SiPostgresql } from "react-icons/si";
 
-import "./aboutMe.css";
+import "./aboutme.css";
 
 export default function AboutMe() {
 
