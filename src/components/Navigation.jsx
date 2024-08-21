@@ -24,10 +24,10 @@ export default function NavTabs () {
         </li>
         <li className="nav-item">
         <Link
-        to="/Resume"
-        className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+        to="/AboutMe"
+        className={currentPage === '/AboutMe' ? 'nav-link active' : 'nav-link'}
         >
-          Resume
+          About Me
           </Link>
         </li>
         <li className="nav-item">

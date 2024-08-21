@@ -1,8 +1,8 @@
 import React from "react";
 import photo from "../../assets/portfolio-photo.jpg";
-import "./aboutMe.css";
+import "./HomePage.css";
 
-export default function AboutMe() {
+export default function HomePage() {
   return (
     <div className="aboutMe-container">
       <h4>About Me</h4>
