@@ -34,23 +34,10 @@ export default function AboutMe() {
       </p>
       <h3>Technologies I Work With</h3>
 
-      {/* <div>
-        <FaGitAlt style={{ fontSize: '5rem', color: '#f06529' }}/>
-        <FaGithub style={{ fontSize: '5rem', color: '#f06529' }}/>
-        <SiMongodb style={{ fontSize: '5rem', color: '#f06529' }}/>
-        <FaNodeJs style={{ fontSize: '5rem', color: '#f06529' }}/>
-        <FaReact style={{ fontSize: '5rem', color: '#f06529' }}/>
-        <SiMysql style={{ fontSize: '5rem', color: '#f06529' }}/>
-        <SiTableau style={{ fontSize: '5rem', color: '#f06529' }}/>
-        <SiSnowflake style={{ fontSize: '5rem', color: '#f06529' }}/>
-        <SiPostgresql style={{ fontSize: '5rem', color: '#f06529' }}/>
-      </div> */}
-
       <div className="tech-icons">
         <ul>
           {technogolies.map((tech, index) => (
             <li key={index} className="tech-item">
-              {/* {tech.icon} */}
               {React.cloneElement(tech.icon, { className: "tech-icon" })}
               <span>{tech.name}</span>
             </li>
@@ -76,7 +63,7 @@ export default function AboutMe() {
             not only to perform but also to discover new ways to improve my skills.
           </p>
           {/* Add more content as needed */}
-          <a href="./Javier_Morales_Resume_2024.pdf" download="Javier_Morales_Resume_2024.pdf" className="download-button">Download Resume (PDF)</a>
+          <a href="./Javier_Morales_Resume_2024.pdf" download="Javier_Morales_Resume_2024.pdf" className="download-button">Download My Resume Here (PDF)</a>
         </div>
       )}
       
