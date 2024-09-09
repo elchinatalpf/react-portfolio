@@ -55,14 +55,6 @@ h1 {
     flex-direction: column;
     font-size: 14px;
   }
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .nav-link {
-    padding: 0.5rem 0;
-    width: 100%;
-  }
   .photo-javier {
     width: 80%;
   }
@@ -91,30 +83,17 @@ h1 {
   button {
     padding: 0.5 1.1em;
   }
-  .header-container {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .nav-link {
-    padding: 0.5rem;
-    width: auto;
-  }
-
   .photo-javier {
     width: 50%;
   }
-
   .card {
     max-width: 100%;
     margin: 1rem 0.5rem;
   }
-
   .portfolio .card {
     flex: 1 1 calc(50% - 1rem);
     max-width: calc(50% - 1rem);
   }
-
   .contact-container {
     padding: 2rem;
   }
@@ -130,16 +109,6 @@ h1 {
   button {
     padding: 0.6em 1.2em;
   }
-  .header-container {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .nav-link {
-    padding: 0.5rem 1rem;
-    width: auto;
-  }
-
   .photo-javier {
     width: 30%;
   }
