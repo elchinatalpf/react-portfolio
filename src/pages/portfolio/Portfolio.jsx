@@ -1,4 +1,3 @@
-import React from 'react';
 import Project from '../../components/project/Project';
 import projects from '../../components/projects_js/projectsData';
 import "./portfolio.css";
