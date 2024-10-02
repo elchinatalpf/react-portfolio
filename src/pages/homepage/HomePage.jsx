@@ -4,7 +4,7 @@ import "./HomePage.css";
 export default function HomePage() {
   return (
     <div className="aboutMe-container">
-      <h4>About Me</h4>
+      <h4>Welcome to my portfolio</h4>
       <img className="photo-javier" src={photo} alt="Javier Morales" />
       <p className="aboutMe-text">
       As I conclude my internship at NAIC as a Business Analyst/QA Project
