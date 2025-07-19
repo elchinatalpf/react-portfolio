@@ -12,6 +12,8 @@ export default function Contact() {
   const [ email, setEmail ] = useState('');
   const [ message, setMessage ] = useState('');
   const [ validationErrors, setValidationErrors ] = useState({});
+  const [submitStatus, setSubmitStatus] = useState(null); //'success', 'error, or null
+  const [submitMessage, setSubmitMessage] = useState('');
   
   const validateForm = () => {
     const errors = {};
@@ -52,10 +54,17 @@ export default function Contact() {
     setName('');
     setEmail('');
     setMessage('');
-    
-    console.log("Email sent successfully" ,result);
+
+    setSubmitStatus('success');
+    setSubmitMessage('Thank you! Your message has been sent successfully.');
+    setTimeout(() => {
+      setSubmitStatus(null);
+      setSubmitMessage('');
+    }, 5000);
   } catch (err) {
     console.log("Error sending email", err);
+    setSubmitStatus('error');
+    setSubmitMessage('Sorry, there was an error sending your message. Please try again.');
   }
 };
 
@@ -73,6 +82,11 @@ const handleChange = (event) => {
           break;
         }
         
+        // Clear any existing status messages when user starts typing
+        if (submitStatus) {
+          setSubmitStatus(null);
+          setSubmitMessage('');
+        }
       };
       
       return (
@@ -119,7 +133,10 @@ const handleChange = (event) => {
         <Button variant="primary" type="submit" className="submit-btn">
           Send
         </Button>
-
+        {submitStatus && (
+          <div className={`alert mt-3 ${submitStatus === 'success' ? 'alert-success' :
+            'alert-error'}`}>{submitMessage}</div>
+        )}
         </Form>
     </Container>
       );
