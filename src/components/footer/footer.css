@@ -1,17 +1,17 @@
 .footer {
-    background-color: rgb(10, 73, 93);
-    text-align: center;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 40px rgba(2, 9, 43, 0.644);
+  background-color: rgb(10, 73, 93);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 40px rgba(2, 9, 43, 0.644);
 }
 
 .footer-link {
-    color: #c2bf92;
-    text-decoration: none;
-    margin: 0 5px;
+  color: #c2bf92;
+  text-decoration: none;
+  margin: 0 5px;
 }
 
 .footer-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

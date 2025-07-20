@@ -1,0 +1,14 @@
+# Ignore artifacts:
+dist
+build
+coverage
+node_modules
+
+# Ignore all HTML files (for Bootstrap compatibility):
+*.html
+
+# Ignore files:
+.env
+.env.*
+*.log
+eslint-report.html

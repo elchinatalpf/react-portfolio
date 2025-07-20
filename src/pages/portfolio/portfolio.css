@@ -1,35 +1,35 @@
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
-    /* scroll-behavior: auto; double check THIS */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  /* scroll-behavior: auto; double check THIS */
 }
 
 /* .card selector is from the project component. */
 .portfolio .card {
-    flex: 1 1 calc(33% - 2rem);
-    max-width: calc(33% - 2rem);
+  flex: 1 1 calc(33% - 2rem);
+  max-width: calc(33% - 2rem);
 }
 
 @media (max-width: 576px) {
-    .portfolio .card {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
+  .portfolio .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    .portfolio .card {
-        flex: 1 1 calc(50% - 1rem);
-        max-width: calc(50% - 1rem);
-    }
+  .portfolio .card {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
 }
 
 @media (min-width: 769px) {
-    .portfolio .card {
-        flex: 1 1 calc(33% - 2rem);
-        max-width: calc(33% - 2rem);
-    }
+  .portfolio .card {
+    flex: 1 1 calc(33% - 2rem);
+    max-width: calc(33% - 2rem);
+  }
 }
