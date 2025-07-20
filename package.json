@@ -10,13 +10,16 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext js,jsx --fix",
     "lint:report": "eslint . --ext js,jsx --format html --output-file eslint-report.html",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "bootstrap": "^5.3.2",
     "dotenv": "^16.3.1",
     "emailjs-com": "^3.2.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
@@ -30,11 +33,13 @@
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
     "eslint": "^8.45.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "prettier": "^3.6.2",
     "vite": "^4.4.5"
   }
 }

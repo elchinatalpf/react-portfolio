@@ -1,5 +1,5 @@
-import ReactDOM from 'react-dom/client'
-import './main.css'
+import ReactDOM from 'react-dom/client';
+import './main.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';
@@ -27,10 +27,10 @@ const router = createBrowserRouter([
       },
       {
         path: 'aboutme',
-        element: <AboutMe />
-      }
+        element: <AboutMe />,
+      },
     ],
-  }
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -1,28 +1,32 @@
-import React, { useState } from "react";
-import { FaGitAlt, FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
-import { SiMongodb, SiMysql, SiTableau, SiSnowflake, SiPostgresql } from "react-icons/si";
-import "./aboutme.css";
-import Button from "react-bootstrap/Button";
-
+import React, { useState } from 'react';
+import { FaGitAlt, FaGithub, FaNodeJs, FaReact } from 'react-icons/fa';
+import {
+  SiMongodb,
+  SiMysql,
+  SiTableau,
+  SiSnowflake,
+  SiPostgresql,
+} from 'react-icons/si';
+import './aboutme.css';
+import Button from 'react-bootstrap/Button';
 
 export default function AboutMe() {
-
   const [showFullResume, setShowFullResume] = useState(false);
-  
+
   const handleToggleResume = () => {
     setShowFullResume(!showFullResume);
   };
 
   const technologies = [
-    { name: "Git", icon: <FaGitAlt className="tech-icon"/> },
-    { name: "GitHub", icon: <FaGithub className="tech-icon"/> },
-    { name: "MongoDB", icon: <SiMongodb className="tech-icon"/> },
-    { name: "Node JS", icon: <FaNodeJs className="tech-icon"/> },
-    { name: "React JS", icon: <FaReact className="tech-icon"/> },
-    { name: "MySQL", icon: <SiMysql className="tech-icon"/> },
-    { name: "Tableau", icon: <SiTableau className="tech-icon"/> },
-    { name: "Snowflake", icon: <SiSnowflake className="tech-icon"/> },
-    { name: "PostgreSQL", icon: <SiPostgresql className="tech-icon" /> }
+    { name: 'Git', icon: <FaGitAlt className="tech-icon" /> },
+    { name: 'GitHub', icon: <FaGithub className="tech-icon" /> },
+    { name: 'MongoDB', icon: <SiMongodb className="tech-icon" /> },
+    { name: 'Node JS', icon: <FaNodeJs className="tech-icon" /> },
+    { name: 'React JS', icon: <FaReact className="tech-icon" /> },
+    { name: 'MySQL', icon: <SiMysql className="tech-icon" /> },
+    { name: 'Tableau', icon: <SiTableau className="tech-icon" /> },
+    { name: 'Snowflake', icon: <SiSnowflake className="tech-icon" /> },
+    { name: 'PostgreSQL', icon: <SiPostgresql className="tech-icon" /> },
   ];
 
   return (
@@ -38,9 +42,9 @@ export default function AboutMe() {
 
       <div className="tech-icons">
         <ul>
-          {technologies.map((tech, index) => (
-            <li key={index} className="tech-item">
-              {React.cloneElement(tech.icon, { className: "tech-icon" })}
+          {technologies.map((tech) => (
+            <li key={tech.name} className="tech-item">
+              {React.cloneElement(tech.icon, { className: 'tech-icon' })}
               <span>{tech.name}</span>
             </li>
           ))}
@@ -49,7 +53,7 @@ export default function AboutMe() {
 
       <div className="resume-container">
         <Button variant="outline-success" onClick={handleToggleResume}>
-          {showFullResume ? "Show Less" : "Show More"}
+          {showFullResume ? 'Show Less' : 'Show More'}
         </Button>
 
         {showFullResume && (
