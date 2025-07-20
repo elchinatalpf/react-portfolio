@@ -29,11 +29,11 @@ export default function Project({
   );
 }
 
-Project.protoTypes = {
+Project.propTypes = {
   title: PropTypes.string.isRequired,
-    imageSrc: PropTypes.string.isRequired,
-    imageAtl: PropTypes.string.isRequired,
-    projectLink: PropTypes.string.isRequired,
-    repoLink: PropTypes.string.isRequired,
-    children: PropTypes.node,
+  imageSrc: PropTypes.string.isRequired,
+  imageAtl: PropTypes.string.isRequired,
+  projectLink: PropTypes.string.isRequired,
+  repoLink: PropTypes.string.isRequired,
+  children: PropTypes.node,
 };

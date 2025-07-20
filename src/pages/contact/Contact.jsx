@@ -20,10 +20,7 @@ export default function Contact() {
       errors.name = 'Your name is required';
     }
 
-    if (
-      !email ||
-      !/^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/.test(email)
-    ) {
+    if (!email || !/^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/.test(email)) {
       errors.email = 'Your email address is invalid';
     }
 
@@ -42,12 +39,7 @@ export default function Contact() {
     }
 
     try {
-      await sendForm(
-        serviceId,
-        templateId,
-        event.target,
-        publicKey
-      );
+      await sendForm(serviceId, templateId, event.target, publicKey);
 
       event.target.reset();
 
