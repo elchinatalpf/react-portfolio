@@ -221,3 +221,10 @@ $alert-padding-x: 1.25rem;
     max-width: calc(50% - 1rem) !important;
   }
 }
+
+.nav-link {
+  &:hover, &.active {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    text-decoration: underline !important;
+  }
+}

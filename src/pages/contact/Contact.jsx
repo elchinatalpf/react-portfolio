@@ -84,7 +84,7 @@ export default function Contact() {
 
   return (
     <Container className="contact-container">
-      <h1 className="contact-heading">Contact Me</h1>
+      <h1 className="contact-heading display-3 lh-sm">Contact Me</h1>
       <Form onSubmit={sendEmail} className="contact-form">
         <Form.Group controlId="formName" className="form-group">
           <Form.Label className="form-label">Name</Form.Label>

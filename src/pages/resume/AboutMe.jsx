@@ -31,7 +31,7 @@ export default function AboutMe() {
 
   return (
     <div className="container mt-5">
-      <h1>About Me</h1>
+      <h1 className='display-3 lh-sm'>About Me</h1>
       <p>
         I am Javier Morales, a software developer with a passion of learning and
         self-improvement as my core strengths.
