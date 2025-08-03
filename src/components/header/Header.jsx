@@ -1,11 +1,10 @@
 import NavTabs from '../Navigation';
-import './header.css';
 
 export default function Header() {
   return (
-    <header className="header-block">
-      <div className="header-container">
-        <h1 className="header-title">Javier Morales Portfolio</h1>
+    <header className="p-3 bg-navy sticky-top shadow-sm">
+      <div className="container d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+        <h1 className="fs-4 mb-3 mb-md-0 text-center display-3 lh-sm">Javier Morales Portfolio</h1>
         <NavTabs />
       </div>
     </header>

@@ -1,0 +1,272 @@
+@import "bootstrap/scss/functions";
+
+// Primary Brand Colors (matching your existing palette)
+$primary: #0A495D;        // Footer/navbar background (rgb(10, 73, 93))
+$secondary: #384e53;      // Project cards background  
+$success: #198754;        // Bootstrap default
+$info: #646cff;          // Existing link color
+$warning: #966907;       // Contact page background
+$danger: #dc3545;        // Bootstrap default
+$light: #f0eaea;         // Custom light text color
+$dark: #02302F;          // Root background (rgb(2, 48, 47))
+
+// Extended Brand Palette
+$custom-colors: (
+  "navy": #02274D,        // Header background (rgb(2, 39, 77))
+  "teal": #0A495D,        // Same as primary, for semantic naming
+  "teal-dark": #02302F,   // Same as dark, for semantic naming
+  "green-dark": #033733,  // About/Resume container background
+  "gold": #966907,        // Same as warning, for semantic naming
+  "tan": #c2bf92,         // Footer links color
+  "azure": #2980b9,       // Project card links
+  "text-light": #e2e2d9,  // Alternative light text (from aboutMe-text)
+  "card-hover": rgba(0, 0, 0, 0.2) // For hover effects
+);
+
+// Typography
+$font-family-base: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$font-size-base: 1rem;
+$font-size-lg: 1.25rem;
+$font-size-sm: 0.875rem;
+$line-height-base: 1.5;
+$headings-font-weight: 600;
+$headings-line-height: 1.1;
+
+// Layout & Spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,    // 0.25rem
+  2: $spacer * 0.5,     // 0.5rem  
+  3: $spacer,           // 1rem
+  4: $spacer * 1.5,     // 1.5rem
+  5: $spacer * 3,       // 3rem
+  6: $spacer * 4,       // 4rem (for larger gaps)
+);
+
+// Grid breakpoints (matching your existing responsive design)
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+// Container max widths
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+);
+
+// Components Customization 
+// Body
+$body-bg: $dark; // existing root background color
+$body-color: $light; // existing light text color
+
+// Links
+$link-color: $info;
+$link-hover-color: #747bff;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+// Borders & Radius (matching your existing border-radius: 8px)
+$border-radius: 0.5rem;             // 8px
+$border-radius-lg: 0.75rem;         // 12px  
+$border-radius-sm: 0.25rem;         // 4px
+$border-width: 1px;
+
+// Cards (matching existing .card styles)
+$card-bg: $secondary;               // #384e53
+$card-border-color: transparent;    // No borders like your current cards
+$card-border-radius: $border-radius;
+$card-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); // Existing shadow
+$card-cap-bg: rgba($dark, 0.3);
+
+// Buttons  
+$btn-border-radius: $border-radius;
+$btn-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$btn-focus-box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+
+// Forms (matching your contact form styling)
+$input-bg: rgba($light, 0.1);
+$input-border-color: rgba($light, 0.2);
+$input-color: $light;
+$input-placeholder-color: rgba($light, 0.6);
+$input-focus-border-color: #007bff;  // Existing focus color
+$input-focus-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+
+// Navigation (matching your existing header styles)
+$navbar-dark-color: rgba($light, 0.85);
+$navbar-dark-hover-color: $light;
+$navbar-dark-active-color: $light;
+$navbar-dark-brand-color: $light;
+$navbar-dark-brand-hover-color: $light;
+
+// Alerts (for contact form success/error messages)
+$alert-border-radius: $border-radius;
+$alert-padding-y: 0.75rem;
+$alert-padding-x: 1.25rem;
+
+// Import Bootstrap core
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";  
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// Bootstrap components
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/close";
+
+// Bootstrap helpers & utilities
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
+
+// Custom utility classes
+@each $color, $value in $custom-colors {
+  .bg-#{$color} {
+    background-color: #{$value} !important;
+  }
+  
+  .text-#{$color} {
+    color: #{$value} !important;
+  }
+  
+  .border-#{$color} {
+    border-color: #{$value} !important;
+  }
+
+  // Hover variants for interactive elements
+  .bg-#{$color}-hover:hover {
+    background-color: #{$value} !important;
+  }
+  
+  .text-#{$color}-hover:hover {
+    color: #{$value} !important;
+  }
+}
+
+// Custom spacing utilities
+.p-custom { padding: 1rem !important; }
+.py-custom { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+.px-custom { padding-left: 1rem !important; padding-right: 1rem !important; }
+
+// Photo sizing utilities
+.photo-responsive {
+  width: 30% !important;
+  height: auto !important;
+  border-radius: 3% !important;
+  
+  @media (max-width: 576px) {
+    width: 80% !important;
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    width: 50% !important;
+  }
+}
+
+// Box shadows matching your existing design
+.shadow-card {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.shadow-card-hover:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
+  transform: scale(1.05) !important;
+}
+
+.shadow-container {
+  box-shadow: 0 4px 40px rgba(187, 220, 200, 0.644) !important;
+}
+
+// Portfolio-specific utilities
+.portfolio-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 1rem !important;
+  padding: 2rem !important;
+}
+
+.portfolio-card {
+  flex: 1 1 calc(33% - 2rem) !important;
+  max-width: calc(33% - 2rem) !important;
+  
+  @media (max-width: 576px) {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    flex: 1 1 calc(50% - 1rem) !important;
+    max-width: calc(50% - 1rem) !important;
+  }
+}
+
+.nav-link {
+  &:hover, &.active {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    text-decoration: underline !important;
+  }
+}
+
+.footer {
+  box-shadow: 0 4px 40px rgba(2, 9, 43, 0.644) !important;
+}
+.footer-link {
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+.tech-icon {
+  font-size: 4rem !important;
+  color: #007bff !important;
+  transition: transform 0.3s ease !important;
+  box-shadow:
+    2px 2px 2px #00000080,
+    10px 1px 12px #00000080,
+    2px 2px 10px #00000080,
+    2px 2px 3px #00000080,
+    inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080 !important;
+    border-radius: 20px !important;
+    padding: 10px 15px !important;
+    margin: 0 4px !important;
+    animation: animate 20s linear infinite !important;
+    text-shadow:
+      0 0 50px #0072ff,
+      0 0 100px #0072ff,
+      0 0 150px #0072ff,
+      0 0 200px #0072ff !important;
+    &:hover {
+      color: #0056b3 !important;
+    }
+}
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  } to {
+    filter: hue-rotate(360deg);
+  }
+}

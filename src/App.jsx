@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="mx-3">
+      <main className="flex-grow-1 p-3">
         <Outlet />
       </main>
       <Footer />

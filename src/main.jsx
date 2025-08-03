@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import './main.css';
+import './styles/custom-bootstrap.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';

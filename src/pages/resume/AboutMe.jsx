@@ -6,8 +6,10 @@ import {
   SiTableau,
   SiSnowflake,
   SiPostgresql,
+  SiCsharp,
+  SiDotnet
 } from 'react-icons/si';
-import './aboutme.css';
+// import './aboutme.css';
 import Button from 'react-bootstrap/Button';
 
 export default function AboutMe() {
@@ -18,20 +20,22 @@ export default function AboutMe() {
   };
 
   const technologies = [
-    { name: 'Git', icon: <FaGitAlt className="tech-icon" /> },
-    { name: 'GitHub', icon: <FaGithub className="tech-icon" /> },
-    { name: 'MongoDB', icon: <SiMongodb className="tech-icon" /> },
-    { name: 'Node JS', icon: <FaNodeJs className="tech-icon" /> },
-    { name: 'React JS', icon: <FaReact className="tech-icon" /> },
-    { name: 'MySQL', icon: <SiMysql className="tech-icon" /> },
-    { name: 'Tableau', icon: <SiTableau className="tech-icon" /> },
-    { name: 'Snowflake', icon: <SiSnowflake className="tech-icon" /> },
-    { name: 'PostgreSQL', icon: <SiPostgresql className="tech-icon" /> },
+    { name: 'Git', icon: <FaGitAlt /> },
+    { name: 'GitHub', icon: <FaGithub /> },
+    { name: 'MongoDB', icon: <SiMongodb /> },
+    { name: 'Node JS', icon: <FaNodeJs /> },
+    { name: 'C#', icon: <SiCsharp /> },
+    { name: '.NET', icon: <SiDotnet /> },
+    { name: 'React JS', icon: <FaReact /> },
+    { name: 'MySQL', icon: <SiMysql /> },
+    { name: 'Tableau', icon: <SiTableau /> },
+    { name: 'Snowflake', icon: <SiSnowflake /> },
+    { name: 'PostgreSQL', icon: <SiPostgresql /> },
   ];
 
   return (
-    <div className="container mt-5">
-      <h1>About Me</h1>
+    <div className="container mt-5 p-1">
+      <h1 className='display-3 lh-sm'>About Me</h1>
       <p>
         I am Javier Morales, a software developer with a passion of learning and
         self-improvement as my core strengths.
@@ -40,18 +44,16 @@ export default function AboutMe() {
       </p>
       <h3>Technologies I Work With</h3>
 
-      <div className="tech-icons">
-        <ul>
+      <div className="d-flex flex-wrap justify-content-center gap-4 mt-3">
           {technologies.map((tech) => (
-            <li key={tech.name} className="tech-item">
+            <div key={tech.name} className="d-flex flex-column align-items-center justify-content-center gap-2 text-center">
               {React.cloneElement(tech.icon, { className: 'tech-icon' })}
-              <span>{tech.name}</span>
-            </li>
+              <span className='fs-6 text-azure'>{tech.name}</span>
+            </div>
           ))}
-        </ul>
       </div>
 
-      <div className="resume-container">
+      <div className="d-flex flex-column align-items-center text-center p-3 bg-green-dark rounded shadow-container mt-4">
         <Button variant="outline-success" onClick={handleToggleResume}>
           {showFullResume ? 'Show Less' : 'Show More'}
         </Button>
@@ -75,7 +77,7 @@ export default function AboutMe() {
             <a
               href="./Javier_Morales_Resume_2024.pdf"
               download="Javier_Morales_Resume_2024.pdf"
-              className="download-button"
+              className="btn btn-primary mt-3"
             >
               Download My Resume Here (PDF)
             </a>
