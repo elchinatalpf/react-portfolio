@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { sendForm } from '@emailjs/browser';
 import { Form, Button, Container } from 'react-bootstrap';
-import './contact.css';
 
 const serviceId = import.meta.env.VITE_REACT_APP_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_TEMPLATE_ID;
@@ -83,35 +82,33 @@ export default function Contact() {
   };
 
   return (
-    <Container className="contact-container">
-      <h1 className="contact-heading display-3 lh-sm">Contact Me</h1>
-      <Form onSubmit={sendEmail} className="contact-form">
-        <Form.Group controlId="formName" className="form-group">
-          <Form.Label className="form-label">Name</Form.Label>
+    <Container className="bg-warning rounded shadow p-4" style={{ maxWidth: '600px' }}>
+      <h1 className="text-center mb-4 text-light display-3 lh-sm">Contact Me</h1>
+      <Form onSubmit={sendEmail} className="mb-4">
+        <Form.Group controlId="formName" className="mb-3">
+          <Form.Label className="fw-bold mb-2">Name</Form.Label>
           <Form.Control
             type="text"
             name="from_name"
             value={name}
             onChange={handleChange}
             required
-            className="form-input"
           />
         </Form.Group>
 
-        <Form.Group controlId="formEmail" className="form-group">
-          <Form.Label className="form-label">Email</Form.Label>
+        <Form.Group controlId="formEmail" className="mb-3">
+          <Form.Label className="fw-bold mb-2">Email</Form.Label>
           <Form.Control
             type="email"
             name="user_email"
             value={email}
             onChange={handleChange}
             required
-            className="form-input"
           />
         </Form.Group>
 
-        <Form.Group controlId="formMessage" className="form-group">
-          <Form.Label className="form-label">Message</Form.Label>
+        <Form.Group controlId="formMessage" className="mb-3">
+          <Form.Label className="fw-bold mb-2">Message</Form.Label>
           <Form.Control
             as="textarea"
             rows={3}
@@ -119,17 +116,16 @@ export default function Contact() {
             value={message}
             onChange={handleChange}
             required
-            className="form-input"
           />
         </Form.Group>
 
-        <Button variant="primary" type="submit" className="submit-btn">
+        <Button variant="primary" type="submit" className="fw-bold">
           Send
         </Button>
         {submitStatus && (
           <div
             className={`alert mt-3 ${
-              submitStatus === 'success' ? 'alert-success' : 'alert-error'
+              submitStatus === 'success' ? 'alert-success' : 'alert-danger'
             }`}
           >
             {submitMessage}
