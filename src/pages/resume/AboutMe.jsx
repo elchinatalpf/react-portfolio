@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { FaGitAlt, FaGithub, FaNodeJs, FaReact } from 'react-icons/fa';
-import {
-  SiMongodb,
-  SiMysql,
-  SiTableau,
-  SiSnowflake,
-  SiPostgresql,
-  SiCsharp,
-  SiDotnet
-} from 'react-icons/si';
-// import './aboutme.css';
+import { FaGitAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { FaNodeJs } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
+import { SiMongodb } from 'react-icons/si';
+import { SiMysql } from 'react-icons/si';
+import { SiTableau } from 'react-icons/si';
+import { SiSnowflake } from 'react-icons/si';
+import { SiPostgresql } from 'react-icons/si';
+import { SiCsharp } from 'react-icons/si';
+import { SiDotnet } from 'react-icons/si';
 import Button from 'react-bootstrap/Button';
 
 export default function AboutMe() {
@@ -75,8 +75,8 @@ export default function AboutMe() {
             </p>
 
             <a
-              href="./Javier_Morales_Resume_2024.pdf"
-              download="Javier_Morales_Resume_2024.pdf"
+              href="./Javier Morales Resume 2025.pdf"
+              download="Javier Morales Resume 2025.pdf"
               className="btn btn-primary mt-3"
             >
               Download My Resume Here (PDF)
