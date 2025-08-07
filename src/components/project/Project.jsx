@@ -11,7 +11,14 @@ export default function Project({
   return (
     <section className="bg-secondary rounded shadow-card text-center mb-3 p-3 portfolio-card shadow-card-hover">
       <header className="fs-5 fw-semibold mb-2">{title}</header>
-      <img src={imageSrc} className="w-100 h-auto mb-2" alt={imageAtl} />
+      <img
+        src={imageSrc}
+        className="w-100 h-auto mb-2"
+        alt={imageAtl}
+        width="400"
+        height="300"
+        loading="lazy"
+      />
       <div className="px-1">
         <div className="mb-2">
           {children}

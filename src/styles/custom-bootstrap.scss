@@ -119,7 +119,7 @@ $alert-padding-x: 1.25rem;
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/root";
 
-// Bootstrap components
+// Bootstrap components - Only import what we use
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type";
@@ -131,10 +131,10 @@ $alert-padding-x: 1.25rem;
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/navbar";
-@import "bootstrap/scss/card";
+// @import "bootstrap/scss/card";      // Not using Bootstrap card component
 @import "bootstrap/scss/alert";
-@import "bootstrap/scss/badge";
-@import "bootstrap/scss/close";
+// @import "bootstrap/scss/badge";      // Not used in the project
+// @import "bootstrap/scss/close";      // Not used in the project
 
 // Bootstrap helpers & utilities
 @import "bootstrap/scss/helpers";

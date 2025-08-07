@@ -1,12 +1,18 @@
 import photo from '../../assets/portfolio-photo.jpg';
-// import './HomePage.css';
 
 export default function HomePage() {
   return (
     <div className="d-flex flex-column align-items-center text-center p-3 
   bg-green-dark rounded shadow-container">
       <h4 className="fs-3 mb-3 text-light">Welcome to my portfolio</h4>
-      <img className="d-block photo-responsive mx-auto mb-4" src={photo} alt="Javier Morales" />
+      <img
+        className="d-block photo-responsive mx-auto mb-4"
+        src={photo}
+        alt="Javier Morales"
+        width="300"
+        height="400"
+        style={{ height: 'auto' }}
+      />
       <p className="fs-6 lh-sm text-light" style={{ maxWidth: '800px' }}>
         As I conclude my internship at NAIC as a Business Analyst/QA Project
         Support Intern, I take immense pride in recently completing an intensive
