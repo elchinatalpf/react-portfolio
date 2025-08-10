@@ -1,4 +1,4 @@
-import photo from '../../assets/portfolio-photo.jpg';
+import photo from '../assets/portfolio-photo.jpg';
 
 export default function HomePage() {
   return (
