@@ -270,3 +270,111 @@ $alert-padding-x: 1.25rem;
     filter: hue-rotate(360deg);
   }
 }
+
+// Gradient backgrounds
+.bg-gradient-navy {
+  background: linear-gradient(135deg, #02274D 0%, #0A495D 100%) !important;
+}
+
+.bg-gradient-teal {
+  background: linear-gradient(135deg, #0A495D 0%, #033733 100%) !important;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(180deg, #02302F 0%, #033733 100%) !important;
+}
+
+// Enhanced shadows
+.shadow-glow {
+  box-shadow: 0 0 20px rgba(100, 108, 255, 0.3) !important;
+}
+
+.shadow-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(100, 108, 255, 0.4) !important;
+}
+
+// Text shadows
+.text-shadow-sm {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+}
+
+.text-shadow-md {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7) !important;
+}
+
+// Hover transform effects (combining Bootstrap classes with custom hover)
+.hover-lift {
+  transition: transform 0.3s ease !important;
+  
+  &:hover {
+    transform: translateY(-4px) !important;
+  }
+}
+
+// Fade in animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out !important;
+}
+
+// Glass effect
+.bg-glass {
+  backdrop-filter: blur(10px) !important;
+  background-color: rgba(56, 78, 83, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.tech-icon-modern {
+  width: 80px !important;
+  height: 80px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(100, 108, 255, 0.1) !important;
+  border: 2px solid rgba(100, 108, 255, 0.3) !important;
+  border-radius: 1rem !important;
+  font-size: 2.5rem !important;
+  color: #646cff !important;
+  transition: all 0.3s ease !important;
+  
+  &:hover {
+    background: rgba(100, 108, 255, 0.2) !important;
+    border-color: #646cff !important;
+    transform: translateY(-4px) !important;
+  }
+}
+
+.fs-responsive {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem) !important;
+}
+
+.display-responsive {
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+  border-radius: 5px;
+  
+  &:hover {
+    background: $primary;
+  }
+}
