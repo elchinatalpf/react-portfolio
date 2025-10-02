@@ -10,12 +10,17 @@ export default function HomePage() {
             <div className="bg-gradient-dark rounded-3 shadow-lg p-4 p-md-5 animate-fade-in-up">
               
               {/* Hero Section */}
-              <div className="text-center mb-5">
-                <h1 className="display-1 fw-bold text-light mb-3 text-shadow-md display-responsive">
-                  Hi, I'm Javier Morales
+              <div className="text-center mb-5 position-relative">
+                <h1 className="display-1 fw-bold mb-4 text-shadow-md display-responsive position-relative">
+                  <span className="bg-gradient-primary text-transparent bg-clip-text">
+                    Hi, I'm Javier Morales
+                  </span>
                 </h1>
-                <p className="lead fs-3 text-tan mb-4">
-                  Software Developer | Ballet Teacher/Coach
+                <p className="lead fs-2 text-info mb-2 fw-light">
+                  Software Developer
+                </p>
+                <p className="fs-4 text-tan mb-5 opacity-75">
+                  Ballet Teacher/Coach
                 </p>
                 <div className="d-flex gap-3 justify-content-center flex-wrap">
                   <Link to="/portfolio" className="btn btn-info btn-lg px-4 py-2 fw-semibold text-uppercase shadow-sm hover-lift">
