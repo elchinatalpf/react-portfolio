@@ -7,11 +7,11 @@ export default function HomePage() {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10">
-            <div className="bg-gradient-dark rounded-3 shadow-lg p-4 p-md-5 animate-fade-in-up">
+            <div className="bg-gradient-dark rounded-3 shadow-lg p-4 p-md-6 animate-fade-in-up">
               
               {/* Hero Section */}
               <div className="text-center mb-5 position-relative">
-                <h1 className="display-1 fw-bold mb-4 text-shadow-md display-responsive position-relative">
+                <h1 className="display-hero fw-bold mb-4 text-shadow-hero position-relative">
                   <span className="bg-gradient-primary text-transparent bg-clip-text">
                     Hi, I'm Javier Morales
                   </span>
@@ -36,15 +36,14 @@ export default function HomePage() {
               <div className="text-center mb-5">
                 <div className="position-relative d-inline-block">
                   <img
-                    className="rounded-3 shadow-lg"
+                    className="photo-professional"
                     src={photo}
                     alt="Javier Morales"
                     width="300"
                     height="400"
                     style={{ 
                       maxWidth: '100%',
-                      height: 'auto',
-                      border: '3px solid rgba(100, 108, 255, 0.3)'
+                      height: 'auto'
                     }}
                   />
                   {/* <div className="position-absolute top-0 start-100 translate-middle">
@@ -58,44 +57,36 @@ export default function HomePage() {
               {/* Bio Section */}
               <div className="row justify-content-center">
                 <div className="col-lg-10">
-                  <div className="bg-navy bg-opacity-50 rounded-3 p-4 shadow">
+                  <div className="bg-glass rounded-3 p-4 shadow">
                     <p className="fs-5 lh-lg text-light mb-4">
-                      <span className="fs-4 fw-bold text-info me-2">💡</span>
-                      As I conclude my internship at NAIC as a Business Analyst/QA Project
-                      Support Intern, I take immense pride in recently completing an intensive
-                      Full Stack Coding Bootcamp program. This period has been transformative,
-                      filled with practical projects and real-world applications that have
-                      solidified my web development skills.
+                      Full-stack developer with a unique blend of technical expertise and creative
+                      problem-solving abilities. Recently completed roles as Operations & Solutions
+                      Specialist at Tiger-Rock Martial Arts, engineering responsive landing pages
+                      for national campaigns, and as BA/QA Project Support Intern at NAIC, where I
+                      leveraged SQL, Tableau, and Snowflake for data-driven decision-making.
                     </p>
-                    
+
                     <hr className="my-4 opacity-25" />
-                    
+
                     <p className="fs-5 lh-lg text-light mb-4">
-                      <span className="fs-4 fw-bold text-info me-2">🚀</span>
-                      An insatiable curiosity and an unwavering commitment to continuous
-                      learning fuel my journey in the technology field. Every project and
-                      challenge has been an opportunity for growth. I am excited to bring my
-                      newly acquired skills to a full-time role where I can contribute to
-                      innovative and impactful solutions.
+                      My technical foundation includes full-stack development (MERN stack, Next.js, C#),
+                      data analysis, and cross-functional collaboration—bridging business
+                      requirements with front-end solutions. I actively integrate AI tools including
+                      Gemini 2.5 Pro, Grok, Claude Desktop with MCP servers, Claude Code, and Perplexity AI
+                      into my development workflow. I bring a results-oriented approach,
+                      whether optimizing production workflows or translating stakeholder needs
+                      into scalable technical implementations.
                     </p>
-                    
+
                     <hr className="my-4 opacity-25" />
-                    
-                    <p className="fs-5 lh-lg text-light mb-4">
-                      <span className="fs-4 fw-bold text-info me-2">🎭</span>
-                      Before my incursion into the tech industry, I spent over two decades as
-                      a classical dancer, traveling to 18 countries to teach and perform. This
-                      unique experience has instilled in me a solid work ethic, creativity,
-                      problem-solving abilities, and a dedication to excellence.
-                    </p>
-                    
+
                     <p className="fs-5 lh-lg text-light mb-0">
-                      <span className="fs-4 fw-bold text-info me-2">🎯</span>
-                      I am actively seeking new opportunities to leverage my diverse
-                      experiences and technical knowledge to make a significant impact. The
-                      amalgamation of my artistic past and technological future drives my
-                      passion to create and innovate in ways that resonate both aesthetically
-                      and functionally.
+                      Before transitioning to tech, I spent two decades as a classical ballet
+                      dancer and instructor, performing with the National Ballet of Cuba and
+                      Kansas City Ballet across 18 countries. I continue teaching and coaching
+                      ballet at all levels. This foundation instilled
+                      discipline, adaptability, and excellence under pressure—skills that now
+                      drive my commitment to crafting innovative, user-focused solutions.
                     </p>
                   </div>
                 </div>

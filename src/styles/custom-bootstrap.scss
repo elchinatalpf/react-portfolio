@@ -140,6 +140,7 @@ $alert-padding-x: 1.25rem;
 @import "bootstrap/scss/helpers";
 @import "bootstrap/scss/utilities/api";
 
+// ====================================================================
 // Custom utility classes
 @each $color, $value in $custom-colors {
   .bg-#{$color} {
@@ -161,6 +162,31 @@ $alert-padding-x: 1.25rem;
   
   .text-#{$color}-hover:hover {
     color: #{$value} !important;
+  }
+}
+
+// ====================================================================
+// HomePage professional Utilities
+.display-hero {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.text-shadow-hero {
+  text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+// Photo hover effect
+.photo-professional {
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: scale(1.02) translateY(-8px);
+    border-color: map-get($map: $custom-colors, $key: "gold");
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   }
 }
 
