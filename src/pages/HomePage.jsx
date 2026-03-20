@@ -72,8 +72,7 @@ export default function HomePage() {
                       My technical foundation includes full-stack development (MERN stack, Next.js, C#),
                       data analysis, and cross-functional collaboration—bridging business
                       requirements with front-end solutions. I actively integrate AI tools including
-                      Gemini 2.5 Pro, Grok, Claude Desktop with MCP servers, Claude Code, and Perplexity AI
-                      into my development workflow. I bring a results-oriented approach,
+                      Gemini, Grok, Claude into my development workflow. I bring a results-oriented approach,
                       whether optimizing production workflows or translating stakeholder needs
                       into scalable technical implementations.
                     </p>

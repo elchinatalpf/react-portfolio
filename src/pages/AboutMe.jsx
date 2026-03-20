@@ -52,17 +52,14 @@ export default function AboutMe() {
               <h2 className="h3 text-info mb-4 fw-bold">My Story</h2>
               <div className="text-light lh-lg">
                 <p className="fs-5 mb-4">
-                  <span className="fs-4 text-info me-2">👨‍💻</span>
                   I am Javier Morales, a software developer with a passion for learning and
                   self-improvement as my core strengths.
                 </p>
                 <p className="fs-5 mb-4">
-                  <span className="fs-4 text-info me-2">🩰</span>
                   Former classical ballet dancer from Cuba, I bring the same discipline, 
                   creativity, and dedication from my 20-year dance career into the world of technology.
                 </p>
                 <p className="fs-5">
-                  <span className="fs-4 text-info me-2">🌟</span>
                   My unique background gives me a fresh perspective on problem-solving and 
                   an artistic approach to creating elegant code solutions.
                 </p>
@@ -110,7 +107,6 @@ export default function AboutMe() {
                 <div className="col-lg-10">
                   <div className="bg-dark bg-opacity-25 rounded-3 p-4">
                     <p className="fs-5 lh-lg text-light mb-4">
-                      <span className="fs-3 text-info me-2">🌍</span>
                       Before stepping into the tech world, I spent 20 years as a
                       professional ballet dancer, traveling the globe and performing in
                       some of the greatest theaters in the world. These experiences have
@@ -119,7 +115,6 @@ export default function AboutMe() {
                     </p>
                     
                     <p className="fs-5 lh-lg text-light mb-5">
-                      <span className="fs-3 text-info me-2">💪</span>
                       I am passionate about learning and improving in every aspect
                       of my life. I embrace challenges with the same dedication I had
                       every day in the studios when I was learning new ballet
