@@ -26,6 +26,7 @@ dist-ssr
 
 # todos
 todo.md
+UI-refinement.md
 
 # ESLint reports
 eslint-report.html
