@@ -1,4 +1,4 @@
-import NavTabs from '../Navigation';
+import NavTabs from './Navigation';
 
 export default function Header() {
   return (

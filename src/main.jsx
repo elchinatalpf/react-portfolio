@@ -4,10 +4,10 @@ import './styles/custom-bootstrap.scss';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';
-const HomePage = lazy(() => import('./pages/homepage/HomePage'));
-const Portfolio = lazy(() => import('./pages/portfolio/Portfolio'));
-const Contact = lazy(() => import('./pages/contact/Contact'));
-const AboutMe = lazy(() => import('./pages/resume/AboutMe'));
+const HomePage = lazy(() => import('./pages/HomePage'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const Contact = lazy(() => import('./pages/Contact'));
+const AboutMe = lazy(() => import('./pages/AboutMe'));
 
 const router = createBrowserRouter([
   {

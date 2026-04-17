@@ -8,31 +8,31 @@ import socialNetwork from '../../assets/social-network-nosql.png';
 const projects = [
   {
     title: 'Tech Blog Model View Controller',
-    description: '',
+    description: 'Simple Web App for CRUD operations on blogs post, comments, and users folliwing the MVC (Model-View-Controller) design pattern.',
     imageSrc: techBlogImage,
     imageAtl: 'Screenshot of the Tech Blog App project',
-    projectLink: 'https://tech-block-mvc-3dbf225d4a8e.herokuapp.com/',
+    projectLink: '',
     repoLink: 'https://github.com/elchinatalpf/Tech-Blog-Model-View-Controller',
   },
   {
     title: 'Note Taker Express JS',
-    description: '',
+    description: 'Note-taking application built with Node.js and Express',
     imageSrc: noteTakerImage,
     imageAtl: 'Screenshot of the Note Taker Express Project',
-    projectLink: 'https://note-tracker-jmorales-bb91efd2b7dc.herokuapp.com/',
+    projectLink: '',
     repoLink: 'https://github.com/elchinatalpf/Note-Taker-Express.js',
   },
   {
     title: 'Text Editor PWA Write',
-    description: '',
+    description: 'Involved configuring Webpack, service workers, and IndexedDB to transform a provided codebase into an offline-capable text editor.',
     imageSrc: textEditorPwa,
     imageAtl: 'Screenshot of Text Editor PWA project',
-    projectLink: 'https://text-editor-pwa-write-dbbcce847208.herokuapp.com/',
+    projectLink: '',
     repoLink: 'https://github.com/elchinatalpf/textEditorPWA-Write-Stuff',
   },
   {
     title: "Server Side API's Weather Dashboard",
-    description: '',
+    description: 'Using OpenWeather and Dayjs APIs, displays current weather and a five-day forecast, persisting search history until a manual reset.',
     imageSrc: weatherDashboard,
     imageAtl: 'Screenshot of Weather Dashboard project',
     projectLink:
@@ -42,7 +42,7 @@ const projects = [
   },
   {
     title: 'Password Generator',
-    description: '',
+    description: 'Random Password Generator',
     imageSrc: passwordGenerator,
     imageAtl: 'Screenshot of the Password Generator Project',
     projectLink:
@@ -51,7 +51,7 @@ const projects = [
   },
   {
     title: 'Social Network API NoSQL',
-    description: '',
+    description: 'Built with Node.js, Express, and MongoDB, this scalable back-end API manages user profiles, friendships, and thoughts with reactions using a robust NoSQL architecture.',
     imageSrc: socialNetwork,
     imageAtl: 'Screenshot of the Password Generator Project',
     projectLink:
