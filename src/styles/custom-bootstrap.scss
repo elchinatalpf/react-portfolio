@@ -190,40 +190,6 @@ $alert-padding-x: 1.25rem;
   }
 }
 
-// Custom spacing utilities
-.p-custom { padding: 1rem !important; }
-.py-custom { padding-top: 1rem !important; padding-bottom: 1rem !important; }
-.px-custom { padding-left: 1rem !important; padding-right: 1rem !important; }
-
-// Photo sizing utilities
-.photo-responsive {
-  width: 30% !important;
-  height: auto !important;
-  border-radius: 3% !important;
-  
-  @media (max-width: 576px) {
-    width: 80% !important;
-  }
-  
-  @media (min-width: 577px) and (max-width: 768px) {
-    width: 50% !important;
-  }
-}
-
-// Box shadows matching your existing design
-.shadow-card {
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1) !important;
-}
-
-.shadow-card-hover:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) !important;
-  transform: scale(1.05) !important;
-}
-
-.shadow-container {
-  box-shadow: 0 4px 40px rgba(187, 220, 200, 0.644) !important;
-}
-
 // ====================================================================
 // Portfolio Page Professional Utilities
 .portfolio-grid-pro {
@@ -251,30 +217,6 @@ $alert-padding-x: 1.25rem;
     transform: translateY(-8px);
     border-color: rgba(217, 199, 162, 0.4);
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
-  }
-}
-
-// Portfolio-specific utilities
-.portfolio-grid {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  gap: 1rem !important;
-  padding: 2rem !important;
-}
-
-.portfolio-card {
-  flex: 1 1 calc(33% - 2rem) !important;
-  max-width: calc(33% - 2rem) !important;
-  
-  @media (max-width: 576px) {
-    flex: 1 1 100% !important;
-    max-width: 100% !important;
-  }
-  
-  @media (min-width: 577px) and (max-width: 768px) {
-    flex: 1 1 calc(50% - 1rem) !important;
-    max-width: calc(50% - 1rem) !important;
   }
 }
 
@@ -352,20 +294,7 @@ $alert-padding-x: 1.25rem;
   background: linear-gradient(180deg, #02302F 0%, #033733 100%) !important;
 }
 
-// Enhanced shadows
-.shadow-glow {
-  box-shadow: 0 0 20px rgba(100, 108, 255, 0.3) !important;
-}
-
-.shadow-glow-hover:hover {
-  box-shadow: 0 0 25px rgba(100, 108, 255, 0.4) !important;
-}
-
 // Text shadows
-.text-shadow-sm {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
-}
-
 .text-shadow-md {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7) !important;
 }
@@ -420,14 +349,6 @@ $alert-padding-x: 1.25rem;
     border-color: #646cff !important;
     transform: translateY(-4px) !important;
   }
-}
-
-.fs-responsive {
-  font-size: clamp(0.9rem, 1.5vw, 1.1rem) !important;
-}
-
-.display-responsive {
-  font-size: clamp(2.5rem, 5vw, 4rem) !important;
 }
 
 ::-webkit-scrollbar {
