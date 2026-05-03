@@ -17,7 +17,9 @@ const router = createBrowserRouter([
       {
         index: true,
         element: (
-          <Suspense fallback={<div className='text-center p-5'>Loading...</div>}>
+          <Suspense
+            fallback={<div className="text-center p-5">Loading...</div>}
+          >
             <HomePage />
           </Suspense>
         ),
@@ -25,7 +27,9 @@ const router = createBrowserRouter([
       {
         path: 'portfolio',
         element: (
-          <Suspense fallback={<div className='text-center p-5'>Loading...</div>}>
+          <Suspense
+            fallback={<div className="text-center p-5">Loading...</div>}
+          >
             <Portfolio />
           </Suspense>
         ),
@@ -33,7 +37,9 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: (
-          <Suspense fallback={<div className='text-center p-5'>Loading...</div>}>
+          <Suspense
+            fallback={<div className="text-center p-5">Loading...</div>}
+          >
             <Contact />
           </Suspense>
         ),
@@ -41,7 +47,9 @@ const router = createBrowserRouter([
       {
         path: 'aboutme',
         element: (
-          <Suspense fallback={<div className='text-center p-5'>Loading...</div>}>
+          <Suspense
+            fallback={<div className="text-center p-5">Loading...</div>}
+          >
             <AboutMe />
           </Suspense>
         ),

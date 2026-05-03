@@ -9,9 +9,11 @@ export default function NavTabs() {
         <li className="m-0">
           <Link
             to="/"
-            className={currentPage === '/'
-              ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
-              : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'}
+            className={
+              currentPage === '/'
+                ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
+                : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'
+            }
           >
             Home
           </Link>
@@ -21,8 +23,8 @@ export default function NavTabs() {
             to="/Portfolio"
             className={
               currentPage === '/Portfolio'
-              ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
-              : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'
+                ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
+                : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'
             }
           >
             Portfolio
@@ -33,8 +35,8 @@ export default function NavTabs() {
             to="/AboutMe"
             className={
               currentPage === '/AboutMe'
-              ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
-              : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'
+                ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
+                : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'
             }
           >
             About Me
@@ -45,8 +47,8 @@ export default function NavTabs() {
             to="/Contact"
             className={
               currentPage === '/Contact'
-              ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
-              : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'
+                ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
+                : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'
             }
           >
             Contact

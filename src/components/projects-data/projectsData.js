@@ -8,7 +8,8 @@ import socialNetwork from '../../assets/social-network-nosql.png';
 const projects = [
   {
     title: 'Tech Blog Model View Controller',
-    description: 'Simple Web App for CRUD operations on blogs post, comments, and users folliwing the MVC (Model-View-Controller) design pattern.',
+    description:
+      'Simple Web App for CRUD operations on blogs post, comments, and users folliwing the MVC (Model-View-Controller) design pattern.',
     imageSrc: techBlogImage,
     imageAtl: 'Screenshot of the Tech Blog App project',
     projectLink: '',
@@ -24,7 +25,8 @@ const projects = [
   },
   {
     title: 'Text Editor PWA Write',
-    description: 'Involved configuring Webpack, service workers, and IndexedDB to transform a provided codebase into an offline-capable text editor.',
+    description:
+      'Involved configuring Webpack, service workers, and IndexedDB to transform a provided codebase into an offline-capable text editor.',
     imageSrc: textEditorPwa,
     imageAtl: 'Screenshot of Text Editor PWA project',
     projectLink: '',
@@ -32,7 +34,8 @@ const projects = [
   },
   {
     title: "Server Side API's Weather Dashboard",
-    description: 'Using OpenWeather and Dayjs APIs, displays current weather and a five-day forecast, persisting search history until a manual reset.',
+    description:
+      'Using OpenWeather and Dayjs APIs, displays current weather and a five-day forecast, persisting search history until a manual reset.',
     imageSrc: weatherDashboard,
     imageAtl: 'Screenshot of Weather Dashboard project',
     projectLink:
@@ -51,7 +54,8 @@ const projects = [
   },
   {
     title: 'Social Network API NoSQL',
-    description: 'Built with Node.js, Express, and MongoDB, this scalable back-end API manages user profiles, friendships, and thoughts with reactions using a robust NoSQL architecture.',
+    description:
+      'Built with Node.js, Express, and MongoDB, this scalable back-end API manages user profiles, friendships, and thoughts with reactions using a robust NoSQL architecture.',
     imageSrc: socialNetwork,
     imageAtl: 'Screenshot of the Password Generator Project',
     projectLink:

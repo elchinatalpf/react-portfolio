@@ -1,6 +1,3 @@
-
-
-
 export default function Footer() {
   return (
     <footer className="bg-teal text-center p-3 rounded-2 footer">

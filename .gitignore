@@ -27,6 +27,7 @@ dist-ssr
 # todos
 todo.md
 UI-refinement.md
+claude_code_token_guide.md
 
 # ESLint reports
 eslint-report.html
