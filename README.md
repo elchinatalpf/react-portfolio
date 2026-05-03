@@ -1,6 +1,6 @@
 # Javier Morales Portfolio
 
-!["Javier Morales Portfolio Project Screenshot"](/src/assets/jmorales-portfolio.png)
+!["Javier Morales Portfolio Project Screenshot"](/src/assets/portfolio-photo.png)
 
 ## Description
 

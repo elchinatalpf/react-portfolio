@@ -86,21 +86,23 @@ export default function Contact() {
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="bg-gradient-teal rounded-3 shadow-lg p-5 animate-fade-in-up">
-              
               {/* Header */}
               <div className="text-center mb-5">
-                <h1 className="display-2 fw-bold text-light mb-3 text-shadow-md">
+                <h1 className="display-2 fw-bold text-light mb-3">
                   Let's Connect
                 </h1>
                 <p className="lead fs-4 text-tan">
                   Have a project in mind? I'd love to hear from you!
                 </p>
               </div>
-              
+
               {/* Contact Info Cards */}
               <div className="row g-3 mb-5">
                 <div className="col-md-4">
-                  <a href="mailto:elchinatalpf@gmail.com" className="text-decoration-none">
+                  <a
+                    href="mailto:elchinatalpf@gmail.com"
+                    className="text-decoration-none"
+                  >
                     <div className="text-center p-3 bg-dark bg-opacity-25 rounded-3 hover-lift">
                       <i className="bi bi-envelope fs-1 text-info mb-2 d-block"></i>
                       <p className="mb-0 text-light small">Email Me</p>
@@ -108,15 +110,27 @@ export default function Contact() {
                   </a>
                 </div>
                 <div className="col-md-4">
-                  <a href="https://www.linkedin.com/in/javier-morales-08642baa/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                  <a
+                    href="https://www.linkedin.com/in/javier-morales-08642baa/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none"
+                  >
                     <div className="text-center p-3 bg-dark bg-opacity-25 rounded-3 hover-lift">
                       <i className="bi bi-linkedin fs-1 text-info mb-2 d-block"></i>
-                      <p className="mb-0 text-light small">Connect on LinkedIn</p>
+                      <p className="mb-0 text-light small">
+                        Connect on LinkedIn
+                      </p>
                     </div>
                   </a>
                 </div>
                 <div className="col-md-4">
-                  <a href="https://github.com/elchinatalpf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                  <a
+                    href="https://github.com/elchinatalpf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none"
+                  >
                     <div className="text-center p-3 bg-dark bg-opacity-25 rounded-3 hover-lift">
                       <i className="bi bi-github fs-1 text-info mb-2 d-block"></i>
                       <p className="mb-0 text-light small">View My Code</p>
@@ -124,15 +138,21 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-              
+
               {/* Form */}
-              <form onSubmit={sendEmail} className="bg-dark bg-opacity-25 rounded-3 p-4">
+              <form
+                onSubmit={sendEmail}
+                className="bg-dark bg-opacity-25 rounded-3 p-4"
+              >
                 <div className="row g-3">
                   <div className="col-md-6">
-                    <label htmlFor="formName" className="form-label text-light fw-semibold">
+                    <label
+                      htmlFor="formName"
+                      className="form-label text-light fw-semibold"
+                    >
                       Your Name
                     </label>
-                    <input 
+                    <input
                       type="text"
                       id="formName"
                       name="from_name"
@@ -143,12 +163,15 @@ export default function Contact() {
                       required
                     />
                   </div>
-                  
+
                   <div className="col-md-6">
-                    <label htmlFor="formEmail" className="form-label text-light fw-semibold">
+                    <label
+                      htmlFor="formEmail"
+                      className="form-label text-light fw-semibold"
+                    >
                       Email Address
                     </label>
-                    <input 
+                    <input
                       type="email"
                       id="formEmail"
                       name="user_email"
@@ -159,9 +182,12 @@ export default function Contact() {
                       required
                     />
                   </div>
-                  
+
                   <div className="col-12">
-                    <label htmlFor="formMessage" className="form-label text-light fw-semibold">
+                    <label
+                      htmlFor="formMessage"
+                      className="form-label text-light fw-semibold"
+                    >
                       Message
                     </label>
                     <textarea
@@ -175,29 +201,35 @@ export default function Contact() {
                       required
                     ></textarea>
                   </div>
-                  
+
                   <div className="col-12 text-center mt-4">
-                    <button type="submit" className="btn btn-info btn-lg px-5 py-2 fw-semibold text-uppercase shadow hover-lift">
+                    <button
+                      type="submit"
+                      className="btn btn-info btn-lg px-5 py-2 fw-semibold text-uppercase shadow hover-lift"
+                    >
                       Send Message
                     </button>
                   </div>
                 </div>
-                
+
                 {/* Alert Messages */}
                 {submitStatus && (
-                  <div className={`alert mt-4 ${
-                    submitStatus === 'success' 
-                      ? 'alert-success bg-success bg-opacity-25 border-success text-light' 
-                      : 'alert-danger bg-danger bg-opacity-25 border-danger text-light'
-                  }`}>
+                  <div
+                    className={`alert mt-4 ${
+                      submitStatus === 'success'
+                        ? 'alert-success bg-success bg-opacity-25 border-success text-light'
+                        : 'alert-danger bg-danger bg-opacity-25 border-danger text-light'
+                    }`}
+                  >
                     <div className="d-flex align-items-center">
-                      <i className={`bi ${submitStatus === 'success' ? 'bi-check-circle' : 'bi-exclamation-triangle'} fs-4 me-2`}></i>
+                      <i
+                        className={`bi ${submitStatus === 'success' ? 'bi-check-circle' : 'bi-exclamation-triangle'} fs-4 me-2`}
+                      ></i>
                       {submitMessage}
                     </div>
                   </div>
                 )}
               </form>
-              
             </div>
           </div>
         </div>

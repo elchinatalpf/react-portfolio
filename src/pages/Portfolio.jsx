@@ -25,21 +25,25 @@ export default function Portfolio() {
             </span>
           </div>
         </div>
-        
+
         {/* Projects Grid */}
         <div className="portfolio-grid-pro">
           {projects.map((project, index) => (
-              <div key={project.title} className={`animate-fade-in-up`} style={{ animationDelay: `${index * 0.1}s` }}>
-                <Project
-                  title={project.title}
-                  imageSrc={project.imageSrc}
-                  imageAtl={project.imageAtl}
-                  projectLink={project.projectLink}
-                  repoLink={project.repoLink}
-                > 
-                  <p>{project.description}</p>
-                </Project>
-              </div>
+            <div
+              key={project.title}
+              className={`animate-fade-in-up`}
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <Project
+                title={project.title}
+                imageSrc={project.imageSrc}
+                imageAtl={project.imageAtl}
+                projectLink={project.projectLink}
+                repoLink={project.repoLink}
+              >
+                <p>{project.description}</p>
+              </Project>
+            </div>
           ))}
         </div>
       </div>

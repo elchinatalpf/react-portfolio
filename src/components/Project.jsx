@@ -20,7 +20,7 @@ export default function Project({
             aspectRatio: '16/9',
             objectFit: 'cover',
             display: 'block',
-            minHeight: '200px'
+            minHeight: '200px',
           }}
           loading="lazy"
         />
@@ -44,7 +44,8 @@ export default function Project({
               href={projectLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-outline-tan btn-sm px-4 py-2 hover-lift">
+              className="btn btn-outline-tan btn-sm px-4 py-2 hover-lift"
+            >
               <i className="bi bi-eye me-1"></i> Live Demo
             </a>
           )}
@@ -53,7 +54,8 @@ export default function Project({
             href={repoLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-outline-light btn-sm px-4 py-2">
+            className="btn btn-outline-light btn-sm px-4 py-2"
+          >
             <i className="bi bi-github me-1"></i> View Code
           </a>
         </div>
