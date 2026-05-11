@@ -5,11 +5,10 @@ import { FaNodeJs } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
 import { SiMongodb } from 'react-icons/si';
 import { SiMysql } from 'react-icons/si';
-import { SiTableau } from 'react-icons/si';
 import { SiSnowflake } from 'react-icons/si';
 import { SiPostgresql } from 'react-icons/si';
-import { SiCsharp } from 'react-icons/si';
 import { SiDotnet } from 'react-icons/si';
+import { TbBrandCSharp, TbPresentationAnalytics } from 'react-icons/tb';
 
 export default function AboutMe() {
   const [showFullResume, setShowFullResume] = useState(false);
@@ -23,11 +22,11 @@ export default function AboutMe() {
     { name: 'GitHub', icon: <FaGithub /> },
     { name: 'MongoDB', icon: <SiMongodb /> },
     { name: 'Node JS', icon: <FaNodeJs /> },
-    { name: 'C#', icon: <SiCsharp /> },
+    { name: 'C#', icon: <TbBrandCSharp /> },
     { name: '.NET', icon: <SiDotnet /> },
     { name: 'React JS', icon: <FaReact /> },
     { name: 'MySQL', icon: <SiMysql /> },
-    { name: 'Tableau', icon: <SiTableau /> },
+    { name: 'Tableau', icon: <TbPresentationAnalytics /> },
     { name: 'Snowflake', icon: <SiSnowflake /> },
     { name: 'PostgreSQL', icon: <SiPostgresql /> },
   ];
