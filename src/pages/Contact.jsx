@@ -52,6 +52,7 @@ export default function Contact() {
         setSubmitMessage('');
       }, 5000);
     } catch (err) {
+      console.error('EmailJS error:', err);
       setSubmitStatus('error');
       setSubmitMessage(
         'Sorry, there was an error sending your message. Please try again.'
@@ -205,7 +206,7 @@ export default function Contact() {
                   <div className="col-12 text-center mt-4">
                     <button
                       type="submit"
-                      className="btn btn-info btn-lg px-5 py-2 fw-semibold text-uppercase shadow hover-lift"
+                      className="btn btn-outline-tan btn-lg px-5 py-2 fw-semibold text-uppercase shadow hover-lift"
                     >
                       Send Message
                     </button>
