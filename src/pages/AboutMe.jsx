@@ -104,14 +104,14 @@ export default function AboutMe() {
           </div>
 
           {showFullResume && (
-            <div className="bg-gradient-teal rounded-3 p-5 shadow-lg animate-fade-in-up mt-4">
-              <h2 className="display-5 text-center text-light mb-4 fw-bold">
+            <div className="bg-gradient-teal rounded-3 p-3 p-md-5 shadow-lg animate-fade-in-up mt-4">
+              <h2 className="display-6 display-md-5 text-center text-light mb-4 fw-bold">
                 My Journey
               </h2>
 
               <div className="row justify-content-center">
                 <div className="col-lg-10">
-                  <div className="bg-dark bg-opacity-25 rounded-3 p-4">
+                  <div className="bg-dark bg-opacity-25 rounded-3 p-3 p-md-4">
                     <p className="fs-5 lh-lg text-light mb-4">
                       Before stepping into the tech world, I spent 20 years as a
                       professional ballet dancer, traveling the globe and
@@ -129,11 +129,11 @@ export default function AboutMe() {
                       skills.
                     </p>
 
-                    <div className="text-center">
+                    <div className="d-grid d-sm-block text-center">
                       <a
                         href="./Javier Morales Resume 2025.pdf"
                         download="Javier Morales Resume 2025.pdf"
-                        className="btn btn-info btn-lg px-5 py-3 fw-semibold text-uppercase shadow hover-lift"
+                        className="btn btn-info btn-lg px-4 px-md-5  py-3 fw-semibold text-uppercase shadow hover-lift"
                       >
                         <i className="bi bi-download me-2"></i>Download My
                         Resume
