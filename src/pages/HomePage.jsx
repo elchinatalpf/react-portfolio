@@ -51,11 +51,6 @@ export default function HomePage() {
                       height: 'auto',
                     }}
                   />
-                  {/* <div className="position-absolute top-0 start-100 translate-middle">
-                    <span className="badge bg-info rounded-pill px-3 py-2 shadow">
-                      Available for hire
-                    </span>
-                  </div> */}
                 </div>
               </div>
 

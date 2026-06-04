@@ -49,8 +49,8 @@ export default function AboutMe() {
               <h2 className="h3 text-info mb-4 fw-bold">My Story</h2>
               <div className="text-light lh-lg">
                 <p className="fs-5 mb-4">
-                  I am Javier Morales, a software developer with a passion for
-                  learning and self-improvement as my core strengths.
+                  I am Javier Morales, aspiring a software developer and Data Analyst with a
+                  passion for learning and constant self-improvement as my core strengths.
                 </p>
                 <p className="fs-5 mb-4">
                   Former classical ballet dancer from Cuba, I bring the same
@@ -131,8 +131,8 @@ export default function AboutMe() {
 
                     <div className="d-grid d-sm-block text-center">
                       <a
-                        href="./Javier Morales Resume 2025.pdf"
-                        download="Javier Morales Resume 2025.pdf"
+                        href="/Javier Morales Resume 2026.pdf"
+                        download="Javier Morales Resume 2026.pdf"
                         className="btn btn-info btn-lg px-4 px-md-5  py-3 fw-semibold text-uppercase shadow hover-lift"
                       >
                         <i className="bi bi-download me-2"></i>Download My
