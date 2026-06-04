@@ -59,39 +59,34 @@ export default function HomePage() {
                 <div className="col-lg-10">
                   <div className="bg-glass rounded-3 p-4 shadow">
                     <p className="fs-5 lh-lg text-light mb-4">
-                      Full-stack developer with a unique blend of technical
-                      expertise and creative problem-solving abilities. Recently
-                      completed roles as Operations & Solutions Specialist at
-                      Tiger-Rock Martial Arts, engineering responsive landing
-                      pages for national campaigns, and as BA/QA Project Support
-                      Intern at NAIC, where I leveraged SQL, Tableau, and
-                      Snowflake for data-driven decision-making.
+                      Full-stack developer and operations analyst specializing
+                      in building responsive web applications and data-driven
+                      infrastructure. Drawing on a dual background in high-velocity
+                      technical environments and enterprise data management,
+                      I engineer scalable front-end solutions and optimize internal
+                      workflows that directly align business requirements with technical execution.
                     </p>
 
                     <hr className="my-4 opacity-25" />
 
                     <p className="fs-5 lh-lg text-light mb-4">
-                      My technical foundation includes full-stack development
-                      (MERN stack, Next.js, C#), data analysis, and
-                      cross-functional collaboration—bridging business
-                      requirements with front-end solutions. I actively
-                      integrate AI tools including Gemini, Grok, Claude into my
-                      development workflow. I bring a results-oriented approach,
-                      whether optimizing production workflows or translating
-                      stakeholder needs into scalable technical implementations.
+                      My foundation spans full-stack development (MERN stack, Next.js, C#/.NET)
+                      and modern data engineering ecosystems, with proven experience leveraging SQL,
+                      Tableau, Snowflake, and Postgres to drive operational decisions.
+                      I systematically integrate advanced LLM workflows (Gemini, Claude) into
+                      my development pipeline to accelerate shipping times and ensure code quality.
+                      Whether deploying responsive national campaigns or architecting cross-functional
+                      data pipelines, I deliver production-ready implementations designed for performance.
                     </p>
 
                     <hr className="my-4 opacity-25" />
 
                     <p className="fs-5 lh-lg text-light mb-0">
-                      Before transitioning to tech, I spent two decades as a
-                      classical ballet dancer and instructor, performing with
-                      the National Ballet of Cuba and Kansas City Ballet across
-                      18 countries. I continue teaching and coaching ballet at
-                      all levels. This foundation instilled discipline,
-                      adaptability, and excellence under pressure—skills that
-                      now drive my commitment to crafting innovative,
-                      user-focused solutions.
+                      Prior to entering technology, I spent two decades as a classical ballet dancer
+                      and instructor with the National Ballet of Cuba and Kansas City Ballet, performing
+                      across 18 countries. The extreme discipline, precise execution, and adaptability
+                      required at the elite level of international performance now drive my engineering
+                      standard: building clean, robust architectures that perform flawlessly under pressure.
                     </p>
                   </div>
                 </div>
