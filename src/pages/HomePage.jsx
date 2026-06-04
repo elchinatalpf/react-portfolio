@@ -61,32 +61,39 @@ export default function HomePage() {
                     <p className="fs-5 lh-lg text-light mb-4">
                       Full-stack developer and operations analyst specializing
                       in building responsive web applications and data-driven
-                      infrastructure. Drawing on a dual background in high-velocity
-                      technical environments and enterprise data management,
-                      I engineer scalable front-end solutions and optimize internal
-                      workflows that directly align business requirements with technical execution.
+                      infrastructure. Drawing on a dual background in
+                      high-velocity technical environments and enterprise data
+                      management, I engineer scalable front-end solutions and
+                      optimize internal workflows that directly align business
+                      requirements with technical execution.
                     </p>
 
                     <hr className="my-4 opacity-25" />
 
                     <p className="fs-5 lh-lg text-light mb-4">
-                      My foundation spans full-stack development (MERN stack, Next.js, C#/.NET)
-                      and modern data engineering ecosystems, with proven experience leveraging SQL,
-                      Tableau, Snowflake, and Postgres to drive operational decisions.
-                      I systematically integrate advanced LLM workflows (Gemini, Claude) into
-                      my development pipeline to accelerate shipping times and ensure code quality.
-                      Whether deploying responsive national campaigns or architecting cross-functional
-                      data pipelines, I deliver production-ready implementations designed for performance.
+                      My foundation spans full-stack development (MERN stack,
+                      Next.js, C#/.NET) and modern data engineering ecosystems,
+                      with proven experience leveraging SQL, Tableau, Snowflake,
+                      and Postgres to drive operational decisions. I
+                      systematically integrate advanced LLM workflows (Gemini,
+                      Claude) into my development pipeline to accelerate
+                      shipping times and ensure code quality. Whether deploying
+                      responsive national campaigns or architecting
+                      cross-functional data pipelines, I deliver
+                      production-ready implementations designed for performance.
                     </p>
 
                     <hr className="my-4 opacity-25" />
 
                     <p className="fs-5 lh-lg text-light mb-0">
-                      Prior to entering technology, I spent two decades as a classical ballet dancer
-                      and instructor with the National Ballet of Cuba and Kansas City Ballet, performing
-                      across 18 countries. The extreme discipline, precise execution, and adaptability
-                      required at the elite level of international performance now drive my engineering
-                      standard: building clean, robust architectures that perform flawlessly under pressure.
+                      Prior to entering technology, I spent two decades as a
+                      classical ballet dancer and instructor with the National
+                      Ballet of Cuba and Kansas City Ballet, performing across
+                      18 countries. The extreme discipline, precise execution,
+                      and adaptability required at the elite level of
+                      international performance now drive my engineering
+                      standard: building clean, robust architectures that
+                      perform flawlessly under pressure.
                     </p>
                   </div>
                 </div>

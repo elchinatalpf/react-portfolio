@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/custom-bootstrap.scss';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';

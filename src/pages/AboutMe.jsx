@@ -49,18 +49,21 @@ export default function AboutMe() {
               <h2 className="h3 text-info mb-4 fw-bold">My Story</h2>
               <div className="text-light lh-lg">
                 <p className="fs-5 mb-4">
-                  I am Javier Morales, a full-stack developer and operations analyst defined by a
-                  rigorous commitment to technical precision and continuous systems optimization.
+                  I am Javier Morales, a full-stack developer and operations
+                  analyst defined by a rigorous commitment to technical
+                  precision and continuous systems optimization.
                 </p>
                 <p className="fs-5 mb-4">
-                  Following a distinguished 20-year career as an international ballet soloist,
-                  I translated a lifetime of elite discipline, structured execution, and creative
-                  problem-solving into building robust software and data solutions.
+                  Following a distinguished 20-year career as an international
+                  ballet soloist, I translated a lifetime of elite discipline,
+                  structured execution, and creative problem-solving into
+                  building robust software and data solutions.
                 </p>
                 <p className="fs-5">
-                  This non-traditional trajectory gives me a unique cognitive edge: the ability
-                  to analyze complex systems from first principles, master technical stacks rapidly,
-                  and approach code architecture with both mathematical rigor and spatial clarity.
+                  This non-traditional trajectory gives me a unique cognitive
+                  edge: the ability to analyze complex systems from first
+                  principles, master technical stacks rapidly, and approach code
+                  architecture with both mathematical rigor and spatial clarity.
                 </p>
               </div>
             </div>
@@ -114,19 +117,21 @@ export default function AboutMe() {
                   <div className="bg-dark bg-opacity-25 rounded-3 p-3 p-md-4">
                     <p className="fs-5 lh-lg text-light mb-4">
                       My approach to technology is shaped by two decades on the
-                      world’s premier stages. Performing under high-stakes conditions
-                      with institutions like the National Ballet of Cuba taught me that
-                      mastery is the result of deliberate practice, iterative refinement,
-                      and an uncompromising attention to detail.
+                      world’s premier stages. Performing under high-stakes
+                      conditions with institutions like the National Ballet of
+                      Cuba taught me that mastery is the result of deliberate
+                      practice, iterative refinement, and an uncompromising
+                      attention to detail.
                     </p>
 
                     <p className="fs-5 lh-lg text-light mb-5">
-                      I approach software engineering with that same operational intensity.
-                      I do not merely write code; I design clean, maintainable systems
-                      and build automation pipelines that eliminate friction. Every
-                      technical challenge—whether optimizing an asynchronous workflow,
-                      debugging a legacy .NET framework, or modeling a data schema—is met
-                      with the absolute focus and execution velocity cultivated through a
+                      I approach software engineering with that same operational
+                      intensity. I do not merely write code; I design clean,
+                      maintainable systems and build automation pipelines that
+                      eliminate friction. Every technical challenge—whether
+                      optimizing an asynchronous workflow, debugging a legacy
+                      .NET framework, or modeling a data schema—is met with the
+                      absolute focus and execution velocity cultivated through a
                       lifetime of elite professional performance.
                     </p>
 
