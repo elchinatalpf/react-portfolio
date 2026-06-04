@@ -27,11 +27,11 @@ export default function Portfolio() {
         </div>
 
         {/* Projects Grid */}
-        <div className="portfolio-grid-pro">
+        <div className="row g-4">
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className={`animate-fade-in-up`}
+              className="col-md-6 col-lg-4 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <Project

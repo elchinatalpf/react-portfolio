@@ -9,10 +9,10 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="text-tan text-decoration-none mx-2 footer-link"
         >
-          <i className="fab fa-github"></i> GitHub
+          <i className="bi bi-github"></i> GitHub
         </a>
         <a
-          href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+          href="https://www.linkedin.com/in/javier-morales-08642baa"
           target="_blank"
           rel="noopener noreferrer"
           className="text-tan text-decoration-none mx-2 footer-link"

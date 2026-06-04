@@ -1,60 +1,36 @@
 import { Link, useLocation } from 'react-router-dom';
+import { Collapse } from 'bootstrap';
 
 export default function NavTabs() {
   const currentPage = useLocation().pathname;
 
+  const links = [
+    { to: '/', label: 'Home' },
+    { to: '/portfolio', label: 'Portfolio' },
+    { to: '/aboutme', label: 'About Me' },
+    { to: '/contact', label: 'Contact' },
+  ];
+
+  const closeMenu = () => {
+    const el = document.getElementById('mainNav');
+    if (el?.classList.contains('show')) {
+      Collapse.getOrCreateInstance(el, { toggle: false }).hide();
+    }
+  };
+
   return (
-    <nav>
-      <ul className="list-unstyled -p-0 m-0 d-flex flex-wrap justify-content-center gap-2 gap-md-3">
-        <li className="m-0">
+    <ul className="navbar-nav ms-auto gap-md-2">
+      {links.map(({ to, label }) => (
+        <li className="nav-item" key={to}>
           <Link
-            to="/"
-            className={
-              currentPage === '/'
-                ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
-                : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'
-            }
+            to={to}
+            onClick={closeMenu}
+            className={`nav-link px-3 py-2 rounded${currentPage === to ? ' active' : ''}`}
           >
-            Home
+            {label}
           </Link>
         </li>
-        <li className="m-0">
-          <Link
-            to="/Portfolio"
-            className={
-              currentPage === '/Portfolio'
-                ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
-                : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'
-            }
-          >
-            Portfolio
-          </Link>
-        </li>
-        <li className="m-0">
-          <Link
-            to="/AboutMe"
-            className={
-              currentPage === '/AboutMe'
-                ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
-                : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'
-            }
-          >
-            About Me
-          </Link>
-        </li>
-        <li className="m-0">
-          <Link
-            to="/Contact"
-            className={
-              currentPage === '/Contact'
-                ? 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link active'
-                : 'text-decoration-none px-3 py-2 rounded d-block fw-medium nav-link'
-            }
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </nav>
+      ))}
+    </ul>
   );
 }

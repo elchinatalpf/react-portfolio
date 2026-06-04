@@ -5,11 +5,10 @@ import { FaNodeJs } from 'react-icons/fa';
 import { FaReact } from 'react-icons/fa';
 import { SiMongodb } from 'react-icons/si';
 import { SiMysql } from 'react-icons/si';
-import { SiTableau } from 'react-icons/si';
 import { SiSnowflake } from 'react-icons/si';
 import { SiPostgresql } from 'react-icons/si';
-import { SiCsharp } from 'react-icons/si';
 import { SiDotnet } from 'react-icons/si';
+import { TbBrandCSharp, TbPresentationAnalytics } from 'react-icons/tb';
 
 export default function AboutMe() {
   const [showFullResume, setShowFullResume] = useState(false);
@@ -23,11 +22,11 @@ export default function AboutMe() {
     { name: 'GitHub', icon: <FaGithub /> },
     { name: 'MongoDB', icon: <SiMongodb /> },
     { name: 'Node JS', icon: <FaNodeJs /> },
-    { name: 'C#', icon: <SiCsharp /> },
+    { name: 'C#', icon: <TbBrandCSharp /> },
     { name: '.NET', icon: <SiDotnet /> },
     { name: 'React JS', icon: <FaReact /> },
     { name: 'MySQL', icon: <SiMysql /> },
-    { name: 'Tableau', icon: <SiTableau /> },
+    { name: 'Tableau', icon: <TbPresentationAnalytics /> },
     { name: 'Snowflake', icon: <SiSnowflake /> },
     { name: 'PostgreSQL', icon: <SiPostgresql /> },
   ];
@@ -50,18 +49,21 @@ export default function AboutMe() {
               <h2 className="h3 text-info mb-4 fw-bold">My Story</h2>
               <div className="text-light lh-lg">
                 <p className="fs-5 mb-4">
-                  I am Javier Morales, a software developer with a passion for
-                  learning and self-improvement as my core strengths.
+                  I am Javier Morales, a full-stack developer and operations
+                  analyst defined by a rigorous commitment to technical
+                  precision and continuous systems optimization.
                 </p>
                 <p className="fs-5 mb-4">
-                  Former classical ballet dancer from Cuba, I bring the same
-                  discipline, creativity, and dedication from my 20-year dance
-                  career into the world of technology.
+                  Following a distinguished 20-year career as an international
+                  ballet soloist, I translated a lifetime of elite discipline,
+                  structured execution, and creative problem-solving into
+                  building robust software and data solutions.
                 </p>
                 <p className="fs-5">
-                  My unique background gives me a fresh perspective on
-                  problem-solving and an artistic approach to creating elegant
-                  code solutions.
+                  This non-traditional trajectory gives me a unique cognitive
+                  edge: the ability to analyze complex systems from first
+                  principles, master technical stacks rapidly, and approach code
+                  architecture with both mathematical rigor and spatial clarity.
                 </p>
               </div>
             </div>
@@ -105,36 +107,39 @@ export default function AboutMe() {
           </div>
 
           {showFullResume && (
-            <div className="bg-gradient-teal rounded-3 p-5 shadow-lg animate-fade-in-up mt-4">
-              <h2 className="display-5 text-center text-light mb-4 fw-bold">
+            <div className="bg-gradient-teal rounded-3 p-3 p-md-5 shadow-lg animate-fade-in-up mt-4">
+              <h2 className="display-6 display-md-5 text-center text-light mb-4 fw-bold">
                 My Journey
               </h2>
 
               <div className="row justify-content-center">
                 <div className="col-lg-10">
-                  <div className="bg-dark bg-opacity-25 rounded-3 p-4">
+                  <div className="bg-dark bg-opacity-25 rounded-3 p-3 p-md-4">
                     <p className="fs-5 lh-lg text-light mb-4">
-                      Before stepping into the tech world, I spent 20 years as a
-                      professional ballet dancer, traveling the globe and
-                      performing in some of the greatest theaters in the world.
-                      These experiences have shaped my approach to learning and
-                      working in software development.
+                      My approach to technology is shaped by two decades on the
+                      world’s premier stages. Performing under high-stakes
+                      conditions with institutions like the National Ballet of
+                      Cuba taught me that mastery is the result of deliberate
+                      practice, iterative refinement, and an uncompromising
+                      attention to detail.
                     </p>
 
                     <p className="fs-5 lh-lg text-light mb-5">
-                      I am passionate about learning and improving in every
-                      aspect of my life. I embrace challenges with the same
-                      dedication I had every day in the studios when I was
-                      learning new ballet choreography. This mindset helps me
-                      not only perform but also discover new ways to improve my
-                      skills.
+                      I approach software engineering with that same operational
+                      intensity. I do not merely write code; I design clean,
+                      maintainable systems and build automation pipelines that
+                      eliminate friction. Every technical challenge—whether
+                      optimizing an asynchronous workflow, debugging a legacy
+                      .NET framework, or modeling a data schema—is met with the
+                      absolute focus and execution velocity cultivated through a
+                      lifetime of elite professional performance.
                     </p>
 
-                    <div className="text-center">
+                    <div className="d-grid d-sm-block text-center">
                       <a
-                        href="./Javier Morales Resume 2025.pdf"
-                        download="Javier Morales Resume 2025.pdf"
-                        className="btn btn-info btn-lg px-5 py-3 fw-semibold text-uppercase shadow hover-lift"
+                        href="/Javier Morales Resume 2026.pdf"
+                        download="Javier Morales Resume 2026.pdf"
+                        className="btn btn-info btn-lg px-4 px-md-5  py-3 fw-semibold text-uppercase shadow hover-lift"
                       >
                         <i className="bi bi-download me-2"></i>Download My
                         Resume
